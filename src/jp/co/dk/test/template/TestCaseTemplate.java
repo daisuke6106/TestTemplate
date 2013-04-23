@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +18,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.rules.TestName;
 
 import static org.hamcrest.core.AllOf.allOf;
 import static org.hamcrest.core.Is.is;
@@ -60,7 +63,7 @@ public class TestCaseTemplate {
 	@BeforeClass 
 	public static void beforeClass() {
 		TestCaseTemplate.caseTemplate.print(TestTemplateProperty.CONSOLE_HEADER.getString());
-		TestCaseTemplate.caseTemplate.print(TestCaseTemplate.caseTemplate.getClassName());
+//		TestCaseTemplate.caseTemplate.print(TestCaseTemplate.caseTemplate.getClassName());
 		if (TestTemplateProperty.CREATE_TEST_TEMP_DIR.getBoolean()) {
 			TestCaseTemplate.caseTemplate.getTestTmpDir();
 			TestCaseTemplate.caseTemplate.getTestTmpFile();
@@ -113,8 +116,10 @@ public class TestCaseTemplate {
 	 */
 	@After
 	public void after() {
+		TestName name= new TestName();
 		this.timeCounter.fin();
 		this.memoryCounter.fin();
+		this.print(name.getMethodName());
 		this.print(this.timeCounter.toString());
 		this.print(this.memoryCounter.toString());
 	}
@@ -386,6 +391,23 @@ public class TestCaseTemplate {
 	}
 	
 	/**
+	 * 指定のリストから指定の要素を検索し、要素の存在有無を返却する。<p/>
+	 * 要素の検索判定はequalsにて判定を行う。
+	 * 
+	 * @param list 要素の検索対象のリスト
+	 * @param element 検索する要素
+	 * @return 検索結果（true:存在する、false:存在しない）
+	 */
+	protected <E> boolean hasList(List<E> list, E element) {
+		if (list == null) return false;
+		for (E e : list) {
+			if (e == null && element == null) return true;
+			if (e.equals(element)) return true;
+		}
+		return false;
+	}
+	
+	/**
 	 * オブジェクトの一覧のリスト(Listを保持するList)内に対して指定のオブジェクトの一覧(List)と一致するものが存在するか判定し、
 	 * 一致したインデックス番号の一覧を返却します。<p/>
 	 * 判定は、順序、オブジェクトがすべて一致するリストが存在した場合のみtrueとなる。<br/>
@@ -423,14 +445,54 @@ public class TestCaseTemplate {
 		return true;
 	}
 	
+	
+	/**
+	 * privateメソッドを実行します<p/>
+	 * テスト対象のターゲットクラスのインスタンス、実行対象のprivateメソッド名称、メソッドの引数を元に<br/>
+	 * privateメソッドを実行し、戻り値をオブジェクト型として返却する。<br/>
+	 * 
+	 * privateメソッドで例外が発生しthrowされた場合、または呼び出しに失敗した場合、例外が発生する。<br/>
+	 * 
+	 * @param targetInstance テスト対象のターゲットクラスのインスタンス
+	 * @param methodName 実行対象のprivateメソッド名称
+	 * @param objects メソッドの引数
+	 * @return privateメソッドの戻り値
+	 * @throws NoSuchMethodException 対象のメソッドが、存在しない場合
+	 * @throws IllegalAccessException 引数が不正な場合
+	 * @throws InvocationTargetException privateメソッド実行で発生した例外
+	 */
+	protected <E> Object executePrivateMethod(E targetInstance, String methodName, Object... objects) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+		Class<E> classObject = (Class<E>) targetInstance.getClass();
+		Method method;
+		try {
+			method = classObject.getDeclaredMethod(methodName);
+		} catch (NoSuchMethodException e) {
+			throw e;
+		} catch (SecurityException e) {
+			throw e;
+		}
+		method.setAccessible(true);
+		 try {
+			return method.invoke(targetInstance, objects);
+		} catch (IllegalAccessException e) {
+			throw e;
+		} catch (IllegalArgumentException e) {
+			throw e;
+		} catch (InvocationTargetException e) {
+			throw e;
+		}
+	}
+	
+	
 	private void print(String str) {
-		System.out.println(str);
+		
 	}
 	
 	private String getClassName() {
 		StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
 		return stackTraceElement[1].getClassName();
 	}
+	
 	
 	// ファイル・ディレクトリ関連 ====================================================================================================
 	
@@ -483,7 +545,6 @@ public class TestCaseTemplate {
 	 */
 	protected File getFileByOwnClass(String name) {
 		String fullPath = this.getClass().getResource(name).getPath();
-		System.out.println(fullPath);
 		return new File(fullPath);
 	}
 	
@@ -501,6 +562,20 @@ public class TestCaseTemplate {
 		}
 		return null;
 	}
+	
+	/**
+	 * パッケージ階層が始まる基点からリソースを探し、指定のファイルの入力ストリームを取得する。
+	 * 
+	 * 例：/src/jp/co/test/TestFile.txt読み込む場合<br/>
+	 * 引き数に"/src/jp/co/test/TestFile.txt"を設定することで読み込めます。
+	 * 
+	 * @param name ファイル名
+	 * @return 入力ストリーム
+	 */
+	protected InputStream getInputStreamBySystemResource(String name) {
+		return ClassLoader.getSystemResourceAsStream(name);
+	}
+	
 	
 	/**
 	 * テスト用一時作業ディレクトリに指定のファイル名でファイルオブジェクトのインスタンスを生成、返却します。<p/>

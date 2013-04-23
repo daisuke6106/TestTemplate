@@ -80,7 +80,20 @@ public class TestTestTemplate extends TestCaseTemplate {
 	}
 	
 	@Test
-	public void hasList() {
+	public void hasList_001() {
+		List<String> list = new ArrayList<String>();
+		list.add("a");
+		list.add(null);
+		list.add("c");
+		
+		assertThat(hasList(list, "a"), is(true));
+		assertThat(hasList(list, null), is(true));
+		assertThat(hasList(list, "c"), is(true));
+		assertThat(hasList(list, "d"), is(false));
+	}
+	
+	@Test
+	public void hasList_002() {
 		assertThat(hasList(null, null), is (false));
 		assertThat(hasList(new ArrayList<List<String>>(), null), is (false));
 		
