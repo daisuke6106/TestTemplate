@@ -184,6 +184,50 @@ public class TestCaseTemplate {
 	}
 	
 	/**
+	 * privateメソッドを実行します<p/>
+	 * テスト対象のターゲットクラスのインスタンス、実行対象のprivateメソッド名称、メソッドの引数を元に<br/>
+	 * privateメソッドを実行し、戻り値をオブジェクト型として返却する。<br/>
+	 * 
+	 * privateメソッドで例外が発生しthrowされた場合、または呼び出しに失敗した場合、例外が発生する。<br/>
+	 * 
+	 * @param targetInstance テスト対象のターゲットクラスのインスタンス
+	 * @param methodName 実行対象のprivateメソッド名称
+	 * @param objects メソッドの引数
+	 * @return privateメソッドの戻り値
+	 * @throws InvocationTargetException privateメソッド実行で発生した例外
+	 */
+	protected Object executePrivateMethod(Object object, String methodName, Object... parameters) throws Throwable{
+		Class classObject = object.getClass();
+		Method method = null;
+		try {
+			if (parameters == null || parameters.length == 0) {
+				method = classObject.getDeclaredMethod(methodName);
+			} else {
+				Class[] classList = new Class[parameters.length];
+				for (int i = 0 ; i < parameters.length; i++) {
+					classList[i] = (parameters[i].getClass());
+				}
+				method = classObject.getDeclaredMethod(methodName, classList);
+			}
+			method.setAccessible( true );
+		} catch (NoSuchMethodException e) {
+			fail(e);
+		} catch (SecurityException e) {
+			fail(e);
+		}
+		try {
+			return method.invoke(object, parameters);
+		} catch (IllegalAccessException e) {
+			fail(e);
+		} catch (IllegalArgumentException e) {
+			fail(e);
+		} catch (InvocationTargetException e) {
+			throw e;
+		}
+		return null;
+	}
+	
+	/**
 	 * 指定の実際値ファイルと期待値ファイルの内容が一致する場合、テスト成功とする。<p/>
 	 * 
 	 * それ以外は試験失敗とする。<br/>
@@ -444,45 +488,6 @@ public class TestCaseTemplate {
 		}
 		return true;
 	}
-	
-	
-	/**
-	 * privateメソッドを実行します<p/>
-	 * テスト対象のターゲットクラスのインスタンス、実行対象のprivateメソッド名称、メソッドの引数を元に<br/>
-	 * privateメソッドを実行し、戻り値をオブジェクト型として返却する。<br/>
-	 * 
-	 * privateメソッドで例外が発生しthrowされた場合、または呼び出しに失敗した場合、例外が発生する。<br/>
-	 * 
-	 * @param targetInstance テスト対象のターゲットクラスのインスタンス
-	 * @param methodName 実行対象のprivateメソッド名称
-	 * @param objects メソッドの引数
-	 * @return privateメソッドの戻り値
-	 * @throws NoSuchMethodException 対象のメソッドが、存在しない場合
-	 * @throws IllegalAccessException 引数が不正な場合
-	 * @throws InvocationTargetException privateメソッド実行で発生した例外
-	 */
-	protected <E> Object executePrivateMethod(E targetInstance, String methodName, Object... objects) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
-		Class<E> classObject = (Class<E>) targetInstance.getClass();
-		Method method;
-		try {
-			method = classObject.getDeclaredMethod(methodName);
-		} catch (NoSuchMethodException e) {
-			throw e;
-		} catch (SecurityException e) {
-			throw e;
-		}
-		method.setAccessible(true);
-		 try {
-			return method.invoke(targetInstance, objects);
-		} catch (IllegalAccessException e) {
-			throw e;
-		} catch (IllegalArgumentException e) {
-			throw e;
-		} catch (InvocationTargetException e) {
-			throw e;
-		}
-	}
-	
 	
 	private void print(String str) {
 		
