@@ -63,7 +63,7 @@ public class TestCaseTemplate {
 	@BeforeClass 
 	public static void beforeClass() {
 		TestCaseTemplate.caseTemplate.print(TestTemplateProperty.CONSOLE_HEADER.getString());
-//		TestCaseTemplate.caseTemplate.print(TestCaseTemplate.caseTemplate.getClassName());
+		TestCaseTemplate.caseTemplate.print(TestCaseTemplate.caseTemplate.getClassName());
 		if (TestTemplateProperty.CREATE_TEST_TEMP_DIR.getBoolean()) {
 			TestCaseTemplate.caseTemplate.getTestTmpDir();
 			TestCaseTemplate.caseTemplate.getTestTmpFile();
