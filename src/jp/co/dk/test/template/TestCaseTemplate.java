@@ -7,7 +7,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import jp.co.dk.message.exception.AbstractMessageException;
@@ -498,6 +501,84 @@ public class TestCaseTemplate {
 		return stackTraceElement[1].getClassName();
 	}
 	
+	// 日付関連 ====================================================================================================
+	
+	/**
+	 * 指定の日付インスタンスをYYYYMMDD形式の文字列に変換し、返却します。
+	 * @param date 日付インスタンス
+	 * @return YYYMMDD形式の文字列
+	 */
+	protected String getStringByDate_YYYYMMDD(Date date) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+		return sdf.format(date).toString();
+	}
+	
+	/**
+	 * 指定の日付インスタンスをYYYYMMDDHH24MMDD形式の文字列に変換し、返却します。
+	 * @param date 日付インスタンス
+	 * @return YYYYMMDDHH24MMDD形式の文字列
+	 */
+	protected String getStringByDate_YYYYMMDDHH24MMDD(Date date) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+		return sdf.format(date).toString();
+	}
+	
+	/**
+	 * YYYYMMDDHH24MMSS形式の日付を表す文字列から日付インスタンスを生成し、返却します。
+	 * @param yyyymmddhh24mmss YYYYMMDDHH24MMSS形式の日付を表す文字列
+	 * @return 日付インスタンス
+	 * @throws ParseException 変換失敗した場合
+	 */
+	protected Date createDateByString(String yyyymmddhh24mmss) throws ParseException {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+		return sdf.parse(yyyymmddhh24mmss);
+	}
+	
+	/**
+	 * 本日日付から指定の日数を引いた日付インスタンスを返却する。
+	 * 
+	 * @param dayCount 日数
+	 * @return 計算結果日付インスタンス
+	 */
+	protected Date getBeforeDate(int dayCount) {
+		return this.getBeforeDate(new Date(), dayCount);
+	}
+	
+	/**
+	 * 指定の日付インスタンスから指定の日数を引いた日付インスタンスを返却する。
+	 * 
+	 * @param date 計算対象日付インスタンス
+	 * @param dayCount 日数
+	 * @return 計算結果日付インスタンス
+	 */
+	protected Date getBeforeDate(Date date, int dayCount) {
+		long mday = (1000L * 60L * 60L * 24L) * (long)dayCount;
+		long time = date.getTime();
+		return new Date(time - mday);
+	}
+	
+	/**
+	 * 本日日付から指定の日数を引いた日付インスタンスを返却する。
+	 * 
+	 * @param dayCount 日数
+	 * @return 計算結果日付インスタンス
+	 */
+	protected Date getAfterDate(int dayCount) {
+		return this.getAfterDate(new Date(), dayCount);
+	}
+	
+	/**
+	 * 指定の日付インスタンスから指定の日数を足した日付インスタンスを返却する。
+	 * 
+	 * @param date 計算対象日付インスタンス
+	 * @param dayCount 日数
+	 * @return 計算結果日付インスタンス
+	 */
+	protected Date getAfterDate(Date date, int dayCount) {
+		long mday = (1000L * 60L * 60L * 24L) * (long)dayCount;
+		long time = date.getTime();
+		return new Date(time + mday);
+	}
 	
 	// ファイル・ディレクトリ関連 ====================================================================================================
 	
@@ -675,7 +756,39 @@ public class TestCaseTemplate {
 		return new File(TestTemplateProperty.TEST_TEMP_FILE.getString());
 	}
 	
+	/**
+	 * テスト用一時作業ディレクトリへ指定のファイル名でファイルを作成する。
+	 * 
+	 * @param fileName ファイル名
+	 * @return ファイルオブジェクト
+	 */
+	protected java.io.File createFileToTmpDir(String fileName) {
+		return this.createFileToDir(this.getTestTmpDir(), fileName);
+	}
 	
+	/**
+	 * 指定のディレクトリへ指定のファイル名でファイルを作成する。
+	 * 
+	 * @param dir ディレクトリ
+	 * @param fileName ファイル名
+	 * @return ファイルオブジェクト
+	 */
+	protected java.io.File createFileToDir(java.io.File dir, String fileName) {
+		StringBuilder sb = new StringBuilder(dir.getAbsolutePath()).append('/').append(fileName);
+		return this.createFile(new java.io.File(sb.toString()));
+	}
+	
+	/**
+	 * 指定のファイルオブジェクトの更新日付を指定の日付オブジェクトへ変換します。
+	 * 
+	 * @param dir ディレクトリ
+	 * @param fileName ファイル名
+	 * @return ファイルオブジェクト
+	 */
+	protected java.io.File setUpdateTimeToFile(java.io.File file, Date date) {
+		file.setLastModified(date.getTime());
+		return file;
+	}
 	/**
 	 * equalsメソッドのテストテンプレート<p/>
 	 * 
