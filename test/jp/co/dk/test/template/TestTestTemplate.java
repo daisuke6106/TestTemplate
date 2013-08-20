@@ -1,5 +1,7 @@
 package jp.co.dk.test.template;
 
+import static org.junit.Assert.assertTrue;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -198,5 +200,27 @@ public class TestTestTemplate extends TestCaseTemplate {
 		list2.add("3");
 		assertThat(super.asList(list3, list4), is (true));
 		
+	}
+	
+	@Test
+	public void getRandomInteger() {
+		int randomInt1 = super.getRandomInteger(0, 1);
+		assertTrue(randomInt1 == 0 || randomInt1 == 1);
+		for (int i=0; i<100000; i++) {
+			int randomInt = super.getRandomInteger(0, 100000);
+			assertTrue(0 <= randomInt && randomInt <= 100000);
+		}
+	}
+	
+	@Test
+	public void getRandomElement() {
+		List<String> list = new ArrayList<String>();
+		list.add("a");
+		list.add("b");
+		list.add("c");
+		for (int i=0; i<10000; i++) {
+			String randomElement = super.getRandomElement(list);
+			assertTrue(randomElement.equals("a") || randomElement.equals("b") || randomElement.equals("c"));
+		}
 	}
 }

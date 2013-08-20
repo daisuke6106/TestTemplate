@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import jp.co.dk.message.exception.AbstractMessageException;
 import jp.co.dk.test.template.property.TestTemplateProperty;
@@ -449,6 +450,7 @@ public class TestCaseTemplate {
 		if (list == null) return false;
 		for (E e : list) {
 			if (e == null && element == null) return true;
+			if (e == null) continue;
 			if (e.equals(element)) return true;
 		}
 		return false;
@@ -859,5 +861,26 @@ public class TestCaseTemplate {
 			assertThat(object1.equals(object2), is (true));
 			assertThat(object1.equals(diffObject), is (false));
 		}
+	}
+	
+	/**
+	 * 指定の開始数値から終了数値までの間でランダムな数値を生成し、返却する。
+	 * 
+	 * @param start 開始数
+	 * @param fin   終了数
+	 * @return 開始数から終了数までのランダムな数値
+	 */
+	public int getRandomInteger(int start, int fin) {
+		return new Random().nextInt(fin) + start;
+	}
+	
+	/**
+	 * 指定のリストからランダムな要素を取得する。
+	 * 
+	 * @param list 取得対象のリスト
+	 * @return ランダムな要素
+	 */
+	public <E> E getRandomElement(List<E> list) {
+		return list.get(this.getRandomInteger(0, list.size()));
 	}
 }
