@@ -1,5 +1,7 @@
 package jp.co.dk.test.template.property;
 
+import java.io.File;
+
 import jp.co.dk.property.AbstractProperty;
 import jp.co.dk.property.exception.PropertyException;
 
@@ -30,7 +32,7 @@ public class TestTemplateProperty extends AbstractProperty{
 	public static TestTemplateProperty TEST_FRAUD_TEMP_FILE = new TestTemplateProperty("test.fraud.tempfile");
 	
 	protected TestTemplateProperty(String key) throws PropertyException {
-		super(key);
+		super(new File("properties/test/TestTemplate.properties"), key);
 	}
 	
 }
