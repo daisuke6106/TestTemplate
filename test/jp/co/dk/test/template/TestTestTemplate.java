@@ -204,22 +204,87 @@ public class TestTestTemplate extends TestCaseTemplate {
 	
 	@Test
 	public void getRandomInteger() {
-		int randomInt1 = super.getRandomInteger(0, 1);
-		assertTrue(randomInt1 == 0 || randomInt1 == 1);
-		for (int i=0; i<100000; i++) {
-			int randomInt = super.getRandomInteger(0, 100000);
-			assertTrue(0 <= randomInt && randomInt <= 100000);
+		// 範囲を0から0にした場合、0が返却されること
+		assertEquals(super.getRandomInteger(0, 0), 0);
+		
+		// 範囲のfrom、toを同じ値にした場合、そのあたいを返却すること。
+		assertEquals(super.getRandomInteger(1, 1), 1);
+		assertEquals(super.getRandomInteger(Integer.MAX_VALUE, Integer.MAX_VALUE), Integer.MAX_VALUE);
+		assertEquals(super.getRandomInteger(Integer.MIN_VALUE, Integer.MIN_VALUE), Integer.MIN_VALUE);
+		
+		// 指定の範囲を引数に渡した場合、その範囲内の値を返却すること。
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(0, 1);
+			System.out.println(randomInt);
+			assertTrue(0 <= randomInt || randomInt >= 1);
 		}
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(0, 10000);
+			System.out.println(randomInt);
+			assertTrue(0 <= randomInt || randomInt >= 10000);
+		}
+		
+		// 指定の範囲を引数に渡した場合、その範囲内の値を返却すること。(start>finの場合)
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(1, 0);
+			System.out.println(randomInt);
+			assertTrue(0 <= randomInt || randomInt >= 1);
+		}
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(10000, 0);
+			System.out.println(randomInt);
+			assertTrue(0 <= randomInt || randomInt >= 10000);
+		}
+		
+		// 指定の範囲を引数に渡した場合、その範囲内の値を返却すること。（マイナス値複合）
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(-1, 0);
+			System.out.println(randomInt);
+			assertTrue(-1 <= randomInt || randomInt >= 1);
+		}
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(-10000, 0);
+			System.out.println(randomInt);
+			assertTrue(-10000 <= randomInt || randomInt >= 10000);
+		}
+		
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(1, -1);
+			System.out.println(randomInt);
+			assertTrue(-1 <= randomInt || randomInt >= 1);
+		}
+		for (int i=0; i<10; i++) {
+			int randomInt = super.getRandomInteger(10000, -10000);
+			System.out.println(randomInt);
+			assertTrue(-10000 <= randomInt || randomInt >= 10000);
+		}
+		
 	}
 	
 	@Test
 	public void getRandomElement() {
-		List<String> list = new ArrayList<String>();
-		list.add("a");
-		list.add("b");
-		list.add("c");
+		
+		// 引数にnullが指定された場合、nullが返却されること。
+		List<String> nullList = null;
+		assertNull(super.getRandomElement(nullList));
+		
+		// 引数に空のリストが指定された場合、nullが返却されること。
+		List<String> emptyList = new ArrayList<String>();
+		assertNull(super.getRandomElement(emptyList));
+		
+		// 要素が一つしかない場合、その要素のみを返却すること。
+		List<String> list1 = new ArrayList<String>();
+		list1.add("a");
+		assertEquals(super.getRandomElement(list1), "a");
+		
+		// 要素が複数ある場合、その保持している要素のどれかを返却すること。
+		List<String> list2 = new ArrayList<String>();
+		list2.add("a");
+		list2.add("b");
+		list2.add("c");
 		for (int i=0; i<10000; i++) {
-			String randomElement = super.getRandomElement(list);
+			String randomElement = super.getRandomElement(list2);
+			System.out.println(randomElement);
 			assertTrue(randomElement.equals("a") || randomElement.equals("b") || randomElement.equals("c"));
 		}
 	}

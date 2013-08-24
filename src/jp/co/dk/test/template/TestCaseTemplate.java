@@ -871,7 +871,9 @@ public class TestCaseTemplate {
 	 * @return 開始数から終了数までのランダムな数値
 	 */
 	public int getRandomInteger(int start, int fin) {
-		return new Random().nextInt(fin) + start;
+		if (start == fin) return start;
+		if (start < fin) return new Random().nextInt(fin) + start;
+		else return new Random().nextInt(start) + fin;
 	}
 	
 	/**
@@ -881,6 +883,11 @@ public class TestCaseTemplate {
 	 * @return ランダムな要素
 	 */
 	public <E> E getRandomElement(List<E> list) {
+		if(list == null || list.size() == 0) return null;
 		return list.get(this.getRandomInteger(0, list.size()));
 	}
+	
+//	public <E> E getRandomElement(List<E> list, Rule rule) {
+//		E element = list.remove(this.getRandomInteger(0, list.size()-1));
+//	}
 }
