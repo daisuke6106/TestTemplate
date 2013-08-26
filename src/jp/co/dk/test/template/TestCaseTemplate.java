@@ -22,6 +22,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.rules.TestName;
 
 import static org.hamcrest.core.AllOf.allOf;
@@ -46,6 +47,9 @@ import static org.hamcrest.core.IsNull.nullValue;
  * @author D.Kanno
  */
 public class TestCaseTemplate {
+	
+	@Rule
+	public TestName testName = new TestName();
 	
 	private TimeCounter timeCounter;
 	
@@ -103,6 +107,7 @@ public class TestCaseTemplate {
 	 */
 	@Before
 	public void before() {
+		System.out.println("==============================[Method Name]" + testName.getMethodName()+"==============================");
 		this.timeCounter = new TimeCounter();
 		this.memoryCounter = new MemoryCounter();
 		this.timeCounter.start();
@@ -120,10 +125,8 @@ public class TestCaseTemplate {
 	 */
 	@After
 	public void after() {
-		TestName name= new TestName();
 		this.timeCounter.fin();
 		this.memoryCounter.fin();
-		this.print(name.getMethodName());
 		this.print(this.timeCounter.toString());
 		this.print(this.memoryCounter.toString());
 	}
@@ -872,8 +875,17 @@ public class TestCaseTemplate {
 	 */
 	public int getRandomInteger(int start, int fin) {
 		if (start == fin) return start;
-		if (start < fin) return new Random().nextInt(fin) + start;
-		else return new Random().nextInt(start) + fin;
+		if (!(start <= 0 && fin <= 0)) { 
+			if (start < fin) return new Random().nextInt(fin+1) + start;
+			else return new Random().nextInt(start+1) + fin;
+		} else {
+			start = -start;
+			fin   = -fin;
+			int result = 0;
+			if (start < fin) result = new Random().nextInt(fin+1) + start;
+			else result = new Random().nextInt(start+1) + fin;
+			return -result;
+		}
 	}
 	
 	/**
@@ -884,10 +896,28 @@ public class TestCaseTemplate {
 	 */
 	public <E> E getRandomElement(List<E> list) {
 		if(list == null || list.size() == 0) return null;
-		return list.get(this.getRandomInteger(0, list.size()));
+		return list.get(this.getRandomInteger(0, list.size()-1));
 	}
 	
-//	public <E> E getRandomElement(List<E> list, Rule rule) {
-//		E element = list.remove(this.getRandomInteger(0, list.size()-1));
-//	}
+	/**
+	 * 指定のリストから指定の条件に合致するランダムな要素を取得する。<p/>
+	 * 合致するものがない場合、または、引数に渡された値がnullまたは空の場合、nullが返却されます。
+	 * 
+	 * @param list 取得対象のリスト
+	 * @param rule 取得条件
+	 * @return ランダムな要素
+	 */
+	public <E> E getRandomElement(List<E> list, RandomSelectRule rule) {
+		if (rule == null) return null;
+		if (list == null) return null;
+		List<E> copyList = new ArrayList<E>(list); 
+		while(!(copyList.isEmpty())) {
+			E element = copyList.remove(this.getRandomInteger(0, copyList.size()-1));
+			if (rule.match(element)) return element;
+		}
+		return null;
+	}
 }
+
+// 参考になりそうなページのURL
+// http://d.hatena.ne.jp/irof/20111216/p1

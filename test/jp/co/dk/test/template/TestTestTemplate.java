@@ -287,5 +287,42 @@ public class TestTestTemplate extends TestCaseTemplate {
 			System.out.println(randomElement);
 			assertTrue(randomElement.equals("a") || randomElement.equals("b") || randomElement.equals("c"));
 		}
+		
+		
+		RandomSelectRule rule = new RandomSelectRule() {
+			@Override
+			public <E> boolean match(E element) {
+				if(!(element instanceof String)) return false;
+				if(element.equals("a")) return true;
+				return false;
+			}
+		};
+		
+		// 指定の条件に一致する要素をランダムに取得する際に、リストにnullが設定されていた場合、nullが返却されること。
+		assertNull(super.getRandomElement(null, rule));
+		
+		// 指定の条件に一致する要素をランダムに取得する際に、リストに空のリストが設定されていた場合、nullが返却されること。
+		assertNull(super.getRandomElement(new ArrayList<String>(), rule));
+		
+		// 指定の条件に一致する要素をランダムに取得する際に、条件にnullが設定されていた場合、nullが返却されること。
+		List<String> list3 = new ArrayList<String>();
+		list3.add("a");
+		assertNull(super.getRandomElement(list3, null));
+		
+		// 指定の条件に一致する要素をランGJダムに取得する際に、リストに値が設定され、条件に値が設定されている。
+		// かつ、条件に合致する値が存在しなかった場合、nullが返却されること。
+		List<String> list4 = new ArrayList<String>();
+		list4.add("b");
+		assertNull(super.getRandomElement(list4, rule));
+		
+		// 指定の条件に一致する要素をランダムに取得する際に、リストに値が設定され、条件に値が設定されている。
+		// かつ、条件に合致する値が存在した場合、その値が返却されること。
+		List<String> list5 = new ArrayList<String>();
+		list5.add("a");
+		list5.add("b");
+		list5.add("c");
+		for (int i = 0; i<10; i++) {
+			assertEquals(super.getRandomElement(list5, rule),"a");
+		}
 	}
 }
