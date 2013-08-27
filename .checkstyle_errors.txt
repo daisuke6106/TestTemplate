@@ -219,428 +219,438 @@ Starting audit...
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:254: 'if' 文では '{}' を使用しなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:254: 行が 80 文字を超えています。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:255: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:261: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:261:40: 式内部での代入は避けるべきです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:261:72: 式内部での代入は避けるべきです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:262: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:270: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:271: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:273: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:277:9: メソッド 'assertHasString' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:277:40: Parameter baseString should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:277:59: Parameter str should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:279: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:279: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:281: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:282:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:282:9: メソッド 'assertThat' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:282:39: Parameter actual should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:282:49: Parameter matcher should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:285: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:286:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:286:9: メソッド 'allOf' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:286:40: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:286:41: Parameter matchers should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:289: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:290: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:290:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:290:9: メソッド 'allOf' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:290:40: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:290:41: Parameter matchers should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:263: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:265: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:266: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:268: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:272: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:276: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:276:9: メソッド 'assertStreamEquals' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:276:43: Parameter stream1 should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:276:64: Parameter stream2 should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:277: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:281: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:281:40: 式内部での代入は避けるべきです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:281:76: 式内部での代入は避けるべきです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:282: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:290: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:291: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:293: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:294:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:294:9: メソッド 'is' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:294:37: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:294:38: Parameter matcher should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:297: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:298:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:298:9: メソッド 'is' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:298:37: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:298:38: Parameter matcher should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:297:9: メソッド 'assertHasString' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:297:40: Parameter baseString should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:297:59: Parameter str should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:299: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:299: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:301: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:302:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:302:9: メソッド 'anything' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:302:43: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:302:9: メソッド 'assertThat' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:302:39: Parameter actual should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:302:49: Parameter matcher should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:305: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:306:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:306:9: メソッド 'anything' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:306:43: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:306:44: Parameter matcher should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:306:9: メソッド 'allOf' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:306:40: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:306:41: Parameter matchers should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:309: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310: 行が 80 文字を超えています。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310:9: メソッド 'equalTo' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310:42: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310:43: Parameter operand should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310:9: メソッド 'allOf' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310:40: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:310:41: Parameter matchers should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:313: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:314:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:314:9: メソッド 'not' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:314:38: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:314:39: Parameter matchers should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:314:9: メソッド 'is' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:314:37: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:314:38: Parameter matcher should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:317: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:318:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:318:9: メソッド 'not' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:318:38: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:318:39: Parameter matchers should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:318:9: メソッド 'is' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:318:37: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:318:38: Parameter matcher should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:321: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:322:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:322:9: メソッド 'nullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:322:44: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:322:9: メソッド 'anything' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:322:43: '(' の前にホワイトスペースがあります。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:325: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:326:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:326:9: メソッド 'notNullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:326:47: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:326:9: メソッド 'anything' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:326:43: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:326:44: Parameter matcher should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:329: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330: 行が 80 文字を超えています。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330:9: メソッド 'nullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330:44: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330:45: Parameter type should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330:9: メソッド 'equalTo' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330:42: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:330:43: Parameter operand should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:333: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334: 行が 80 文字を超えています。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334:9: メソッド 'notNullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334:47: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334:48: Parameter type should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334:9: メソッド 'not' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334:38: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:334:39: Parameter matchers should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:337: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:338:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:338:32: Parameter e should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:339: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:338:9: メソッド 'not' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:338:38: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:338:39: Parameter matchers should be final.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:341: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:342: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:344: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:346: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:348:9: メソッド 'fail' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:351: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:352: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:354: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:356: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:358:9: メソッド 'fail' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:358:29: Parameter e should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:358:39: 'e' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:342:9: Javadoc コメントがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:342:9: メソッド 'nullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:342:44: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:345: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:346:9: Javadoc コメントがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:346:9: メソッド 'notNullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:346:47: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:349: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:350: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:350:9: Javadoc コメントがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:350:9: メソッド 'nullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:350:44: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:350:45: Parameter type should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:353: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:354: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:354:9: Javadoc コメントがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:354:9: メソッド 'notNullValue' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:354:47: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:354:48: Parameter type should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:357: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:358:9: Javadoc コメントがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:358:32: Parameter e should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:359: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:361: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:362: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:364: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:366: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:368:9: メソッド 'fail' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:368:29: Parameter e should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:368:54: 'e' には @param タグが必要です。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:371: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:372: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:373:42: 不要な終了タグが見つかりました: </p>
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:375: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:385: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:389:9: メソッド 'getAllPatternList' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:389:17: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:389:52: Parameter elementList should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:396:26: 'if' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:400:28: 'for' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:400:34: '=' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:400:35: '=' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:400:39: '<' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:400:40: '<' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:401: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:403: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:414: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:415: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:417: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:421:9: メソッド 'reversalList' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:421:20: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:421:44: Parameter targetList should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:422: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:424:49: '-' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:424:53: '<=' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:424:55: '<=' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:424:56: ';' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:429: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:430: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:433: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:438:9: メソッド 'hasList' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:438:20: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:438:39: Parameter lists should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:438:60: Parameter list should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:440: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:443: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:444: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:447: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:452:9: メソッド 'hasList' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:452:20: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:452:39: Parameter list should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:452:53: Parameter element should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:453: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:455: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:456: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:457: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:461: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:462: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:374: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:376: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:378:9: メソッド 'fail' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:378:29: Parameter e should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:378:39: 'e' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:381: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:382: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:384: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:386: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:388:9: メソッド 'fail' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:388:29: Parameter e should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:388:54: 'e' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:391: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:392: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:393:42: 不要な終了タグが見つかりました: </p>
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:395: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:405: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:409:9: メソッド 'getAllPatternList' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:409:17: '<E>' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:409:52: Parameter elementList should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:416:26: 'if' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:420:28: 'for' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:420:34: '=' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:420:35: '=' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:420:39: '<' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:420:40: '<' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:421: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:423: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:434: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:435: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:437: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:441:9: メソッド 'reversalList' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:441:20: '<E>' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:441:44: Parameter targetList should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:442: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:444:49: '-' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:444:53: '<=' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:444:55: '<=' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:444:56: ';' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:449: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:450: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:453: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:458:9: メソッド 'hasList' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:458:20: '<E>' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:458:39: Parameter lists should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:458:60: Parameter list should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:460: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:463: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:464: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:467: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:468: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472:9: メソッド 'getEqualsListIndex' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472:9: メソッド 'hasList' は拡張するように設計されていません - abstract か final か空である必要があります。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472:20: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472:56: Parameter lists should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472:77: Parameter list should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:473: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:474: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:475:42: '<' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:475:43: '<' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:475:55: ';' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:475:57: ';' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472:39: Parameter list should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:472:53: Parameter element should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:473: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:475: 'if' 文では '{}' を使用しなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:476: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:476: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:476: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:480: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:481: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:485: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:490:9: メソッド 'asList' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:490:20: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:490:38: Parameter list1 should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:490:53: Parameter list2 should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:491: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:492: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:493: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:494:34: '<' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:494:35: '<' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:495: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:495: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:499: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:500:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:500:28: Parameter str should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:501: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:503: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:504:9: Javadoc コメントがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:505: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:508: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:509: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:510: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:511: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:516:9: メソッド 'getStringByDate_YYYYMMDD' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:516:26: 名前 'getStringByDate_YYYYMMDD' はパターン '^[a-z][a-zA-Z0-9]*$' に一致しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:516:51: Parameter date should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:520: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:521: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:526:9: メソッド 'getStringByDate_YYYYMMDDHH24MMDD' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:526:26: 名前 'getStringByDate_YYYYMMDDHH24MMDD' はパターン '^[a-z][a-zA-Z0-9]*$' に一致しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:526:59: Parameter date should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:477: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:481: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:482: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:487: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:488: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:492: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:492:9: メソッド 'getEqualsListIndex' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:492:20: '<E>' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:492:56: Parameter lists should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:492:77: Parameter list should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:493: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:494: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:495:42: '<' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:495:43: '<' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:495:55: ';' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:495:57: ';' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:496: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:496: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:496: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:500: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:501: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:505: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:510:9: メソッド 'asList' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:510:20: '<E>' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:510:38: Parameter list1 should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:510:53: Parameter list2 should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:511: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:512: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:513: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:514:34: '<' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:514:35: '<' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:515: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:515: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:519: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:520:9: Javadoc コメントがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:520:28: Parameter str should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:521: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:523: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:524:9: Javadoc コメントがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:525: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:528: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:529: 行が 80 文字を超えています。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:530: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:531: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:537: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:537:9: メソッド 'createDateByString' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:537:43: Parameter yyyymmddhh24mmss should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:541: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:542: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:544: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:548:9: メソッド 'getBeforeDate' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:548:38: Parameter dayCount should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:551: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:552: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:554: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:559:9: メソッド 'getBeforeDate' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:559:38: Parameter date should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:559:49: Parameter dayCount should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:560:30: '1000L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:560:38: '60L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:560:44: '60L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:560:50: '24L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:560:63: 'cast' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:536:9: メソッド 'getStringByDate_YYYYMMDD' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:536:26: 名前 'getStringByDate_YYYYMMDD' はパターン '^[a-z][a-zA-Z0-9]*$' に一致しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:536:51: Parameter date should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:540: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:541: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:546:9: メソッド 'getStringByDate_YYYYMMDDHH24MMDD' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:546:26: 名前 'getStringByDate_YYYYMMDDHH24MMDD' はパターン '^[a-z][a-zA-Z0-9]*$' に一致しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:546:59: Parameter date should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:550: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:551: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:557: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:557:9: メソッド 'createDateByString' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:557:43: Parameter yyyymmddhh24mmss should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:561: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:562: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:564: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:565: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:567: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:571:9: メソッド 'getAfterDate' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:571:37: Parameter dayCount should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:568:9: メソッド 'getBeforeDate' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:568:38: Parameter dayCount should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:571: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:572: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:574: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:575: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:577: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:582:9: メソッド 'getAfterDate' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:582:37: Parameter date should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:582:48: Parameter dayCount should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:583:30: '1000L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:583:38: '60L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:583:44: '60L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:583:50: '24L' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:583:63: 'cast' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:579:9: メソッド 'getBeforeDate' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:579:38: Parameter date should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:579:49: Parameter dayCount should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:580:30: '1000L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:580:38: '60L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:580:44: '60L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:580:50: '24L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:580:63: 'cast' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:584: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:585: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:587: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:588: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:589: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:590: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:592: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:595:9: メソッド 'getTestTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:598: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:599: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:601: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:604:9: メソッド 'getTestTmpFile' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:591:9: メソッド 'getAfterDate' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:591:37: Parameter dayCount should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:594: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:595: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:597: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:602:9: メソッド 'getAfterDate' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:602:37: Parameter date should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:602:48: Parameter dayCount should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:603:30: '1000L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:603:38: '60L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:603:44: '60L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:603:50: '24L' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:603:63: 'cast' の後にホワイトスペースがありません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:607: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:608: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:611:9: メソッド 'deleteTestTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:614: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:615: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:618:9: メソッド 'deleteTestTmpFile' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:608: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:609: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:610: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:612: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:615:9: メソッド 'getTestTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:618: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:619: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:621: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:622: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:624: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:627:9: メソッド 'getFraudTestTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:628: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:630: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:631: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:633: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:637:9: メソッド 'getFileByOwnClass' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:637:42: Parameter name should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:624:9: メソッド 'getTestTmpFile' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:627: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:628: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:631:9: メソッド 'deleteTestTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:634: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:635: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:638:9: メソッド 'deleteTestTmpFile' は拡張するように設計されていません - abstract か final か空である必要があります。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:641: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:642: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:644: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:648:9: メソッド 'getInputStreamByOwnClass' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:648:56: Parameter name should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:650: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:650:52: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:656: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:657: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:659: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:662: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:666:9: メソッド 'getInputStreamBySystemResource' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:666:62: Parameter name should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:669: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:670: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:671: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:674: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:678:9: メソッド 'getTestFileInstance' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:678:52: Parameter fileName should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:688: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:689: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:692: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:696:40: Parameter file should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:703: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:704: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:707: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:711:41: Parameter file should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:722: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:723: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:726: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:729:29: Parameter file should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:731:31: ';' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:738:35: Array brackets at illegal position.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:745: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:746: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:748: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:754: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:755: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:757: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:761: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:763: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:764: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:766: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:770:9: メソッド 'createFileToTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:770:51: Parameter fileName should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:773: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:774: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:776: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:647:9: メソッド 'getFraudTestTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:648: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:650: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:651: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:653: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:657:9: メソッド 'getFileByOwnClass' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:657:43: Parameter name should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:661: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:662: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:664: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:668:9: メソッド 'getInputStreamByOwnClass' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:668:56: Parameter name should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:670: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:670:52: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:676: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:677: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:679: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:682: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:686:9: メソッド 'getInputStreamBySystemResource' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:686:62: Parameter name should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:689: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:690: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:691: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:694: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:698:9: メソッド 'getTestFileInstance' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:698:52: Parameter fileName should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:708: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:709: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:712: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:716:40: Parameter file should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:723: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:724: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:727: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:731:41: Parameter file should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:742: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:743: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:746: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:749:29: Parameter file should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:751:31: ';' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:758:35: Array brackets at illegal position.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:765: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:766: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:768: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:774: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:775: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:777: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:781: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:781:9: メソッド 'createFileToDir' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:781:48: Parameter dir should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:781:66: Parameter fileName should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:782: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:785: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:786: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:788: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:789:12: 'dir' に対する使用されない @param タグです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:790:12: 'fileName' に対する使用されない @param タグです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:793: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:793:9: メソッド 'setUpdateTimeToFile' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:793:52: Parameter file should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:793:65: 'file' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:793:71: Parameter date should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:793:76: 'date' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:799: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:800: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:805: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:806: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:807: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:808: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:810: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:823: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:829: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:829:9: メソッド 'testEquals' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:829:35: Parameter object1 should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:829:51: Parameter object2 should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:829:67: Parameter object3 should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:829:83: Parameter differentObjectList should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:831:56: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:832:56: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:833:56: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:834: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:835: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:836: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:836:83: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:837: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:838: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:839: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:839:110: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:840: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:842:53: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:843:53: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:844:53: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:845: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:847:73: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:848:73: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:849:73: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:850: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:852:52: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:853:52: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:854:52: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:855: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:858:67: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:783: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:784: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:786: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:790:9: メソッド 'createFileToTmpDir' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:790:51: Parameter fileName should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:793: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:794: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:796: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:801: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:801:9: メソッド 'createFileToDir' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:801:48: Parameter dir should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:801:66: Parameter fileName should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:802: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:805: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:806: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:808: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:809:12: 'dir' に対する使用されない @param タグです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:810:12: 'fileName' に対する使用されない @param タグです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:813: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:813:9: メソッド 'setUpdateTimeToFile' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:813:52: Parameter file should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:813:65: 'file' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:813:71: Parameter date should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:813:76: 'date' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:819: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:820: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:825: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:826: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:827: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:828: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:830: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:843: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:849: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:849:9: メソッド 'testEquals' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:849:35: Parameter object1 should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:849:51: Parameter object2 should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:849:67: Parameter object3 should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:849:83: Parameter differentObjectList should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:851:56: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:852:56: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:853:56: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:854: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:855: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:856: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:856:83: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:857: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:858: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:859: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:859:110: '(' の前にホワイトスペースがあります。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:860: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:861: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:863:34: '<' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:863:35: '100' はマジックナンバーです。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:863:35: '<' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:864:64: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:865:67: '(' の前にホワイトスペースがあります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:868: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:869: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:871: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:876:9: メソッド 'getRandomInteger' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:876:37: Parameter start should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:876:48: Parameter fin should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:877: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:878: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:879: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:879: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:879:73: '+' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:879:74: '+' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:880: 'else' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:880:63: '+' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:880:64: '+' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:885: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:885: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:885:75: '+' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:885:76: '+' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:886: 'else' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:886:65: '+' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:886:66: '+' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:890: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:891: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:893: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:897:9: メソッド 'getRandomElement' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:897:17: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:897:39: Parameter list should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:898: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:898:19: 'if' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:899:69: '-' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:899:70: '-' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:901: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:902: 最初の一文はピリオドで終わらなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:905: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:910:9: メソッド 'getRandomElement' は拡張するように設計されていません - abstract か final か空である必要があります。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:910:17: '<E>' には @param タグが必要です。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:910:39: Parameter list should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:910:53: Parameter rule should be final.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:911: 'if' 文では '{}' を使用しなければなりません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:912: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:862:53: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:863:53: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:864:53: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:865: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:867:73: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:868:73: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:869:73: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:870: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:872:52: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:873:52: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:874:52: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:875: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:878:67: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:880: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:881: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:883:34: '<' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:883:35: '100' はマジックナンバーです。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:883:35: '<' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:884:64: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:885:67: '(' の前にホワイトスペースがあります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:888: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:889: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:891: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:896:9: メソッド 'getRandomInteger' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:896:37: Parameter start should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:896:48: Parameter fin should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:897: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:898: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:899: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:899: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:899:73: '+' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:899:74: '+' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:900: 'else' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:900:63: '+' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:900:64: '+' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:905: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:905: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:905:75: '+' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:905:76: '+' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:906: 'else' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:906:65: '+' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:906:66: '+' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:910: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:911: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:913: Line has trailing spaces.
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:914:22: 'while' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:915: 行が 80 文字を超えています。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:915:93: '-' の前にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:915:94: '-' の後にホワイトスペースがありません。
-/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:916: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:917:9: メソッド 'getRandomElement' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:917:17: '<E>' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:917:39: Parameter list should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:918: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:918:19: 'if' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:919:69: '-' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:919:70: '-' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:921: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:922: 最初の一文はピリオドで終わらなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:925: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:930:9: メソッド 'getRandomElement' は拡張するように設計されていません - abstract か final か空である必要があります。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:930:17: '<E>' には @param タグが必要です。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:930:39: Parameter list should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:930:53: Parameter rule should be final.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:931: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:932: 'if' 文では '{}' を使用しなければなりません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:933: Line has trailing spaces.
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:934:22: 'while' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:935: 行が 80 文字を超えています。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:935:93: '-' の前にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:935:94: '-' の後にホワイトスペースがありません。
+/home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TestCaseTemplate.java:936: 'if' 文では '{}' を使用しなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TimeCounter.java:3: 最初の一文はピリオドで終わらなければなりません。
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TimeCounter.java:5: Line has trailing spaces.
 /home/dk/projects/TestTemplate/src/jp/co/dk/test/template/TimeCounter.java:8: Line has trailing spaces.

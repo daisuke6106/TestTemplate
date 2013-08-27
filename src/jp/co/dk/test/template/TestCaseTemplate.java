@@ -253,12 +253,32 @@ public class TestCaseTemplate {
 		if (!file2.exists()) org.junit.Assert.fail();
 		if (file1.isDirectory() || file2.isDirectory()) org.junit.Assert.fail();
 		if (file1.length() != file2.length()) org.junit.Assert.fail();
-		int byte1;
-		int byte2;
 		try {
 			FileInputStream fi1 = new FileInputStream(file1);
 			FileInputStream fi2 = new FileInputStream(file2);
-			while (((byte1 = fi1.read()) != -1) && ((byte2 = fi2.read()) != -1)) {
+			assertStreamEquals(fi1, fi2);
+		} catch (IOException e) {
+			fail(e);
+		}
+		
+	}
+	
+	/**
+	 * 指定の実際値ストリームと期待値ストリームの内容が一致する場合、テスト成功とする。<p/>
+	 * 
+	 * それ以外は試験失敗とする。<br/>
+	 * ・実際値ストリーム、期待値ストリームがnullの場合<br/>
+	 * ・実際値ストリーム、期待値ストリームの内容が異なる場合<br/>
+	 * 
+	 * @param stream1 実際値ストリームオブジェクト
+	 * @param stream2 期待値ストリームオブジェクト
+	 */
+	protected void assertStreamEquals(InputStream stream1, InputStream stream2) {
+		if (stream1 == null || stream2 == null) org.junit.Assert.fail();
+		int byte1;
+		int byte2;
+		try {
+			while (((byte1 = stream1.read()) != -1) && ((byte2 = stream2.read()) != -1)) {
 				if (byte1 != byte2) org.junit.Assert.fail();
 			}
 		} catch (FileNotFoundException e) {
@@ -634,7 +654,7 @@ public class TestCaseTemplate {
 	 * @param name ファイル名
 	 * @return ファイルオブジェクト
 	 */
-	protected File getFileByOwnClass(String name) {
+	protected File  getFileByOwnClass(String name) {
 		String fullPath = this.getClass().getResource(name).getPath();
 		return new File(fullPath);
 	}
@@ -657,8 +677,8 @@ public class TestCaseTemplate {
 	/**
 	 * パッケージ階層が始まる基点からリソースを探し、指定のファイルの入力ストリームを取得する。
 	 * 
-	 * 例：/src/jp/co/test/TestFile.txt読み込む場合<br/>
-	 * 引き数に"/src/jp/co/test/TestFile.txt"を設定することで読み込めます。
+	 * 例：jp/co/test/TestFile.txt読み込む場合<br/>
+	 * 引き数に"jp/co/test/TestFile.txt"を設定することで読み込めます。
 	 * 
 	 * @param name ファイル名
 	 * @return 入力ストリーム
