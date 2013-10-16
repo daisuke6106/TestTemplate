@@ -131,35 +131,220 @@ public class TestCaseTemplate {
 		this.print(this.memoryCounter.toString());
 	}
 	
+	// 比較関連     ====================================================================================================
+	
 	/**
 	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
 	 * 
-	 * @param long1 期待値
-	 * @param long2 実際値
+	 * @param value1 期待値
+	 * @param value2 実際値
 	 */
-	protected void assertEquals(long long1, long long2) {
-		org.junit.Assert.assertEquals(long1, long2);
+	protected void assertEquals(boolean value1, boolean value2) {
+		org.junit.Assert.assertEquals(value1, value2);
 	}
 	
 	/**
 	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
 	 * 
-	 * @param long1 期待値
-	 * @param long2 実際値
+	 * @param value1 期待値
+	 * @param value2 実際値
 	 */
-	protected void assertEquals(double double1, double double2) {
-		org.junit.Assert.assertEquals(double1, double2);
+	protected void assertEquals(byte value1, byte value2) {
+		org.junit.Assert.assertEquals(value1, value2);
 	}
 	
 	/**
 	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
 	 * 
-	 * @param long1 期待値
-	 * @param long2 実際値
+	 * @param value1 期待値
+	 * @param value2 実際値
+	 */
+	protected void assertEquals(short value1, short value2) {
+		org.junit.Assert.assertEquals(value1, value2);
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param value1 期待値
+	 * @param value2 実際値
+	 */
+	protected void assertEquals(int value1, int value2) {
+		org.junit.Assert.assertEquals(value1, value2);
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param value1 期待値
+	 * @param value2 実際値
+	 */
+	protected void assertEquals(long value1, long value2) {
+		org.junit.Assert.assertEquals(value1, value2);
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param value1 期待値
+	 * @param value2 実際値
+	 */
+	protected void assertEquals(float value1, float value2) {
+		org.junit.Assert.assertEquals(value1, value2);
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param value1 期待値
+	 * @param value2 実際値
+	 */
+	protected void assertEquals(char value1, char value2) {
+		org.junit.Assert.assertEquals(value1, value2);
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param value1 期待値
+	 * @param value2 実際値
+	 */
+	protected void assertEquals(double value1, double value2) {
+		org.junit.Assert.assertEquals(value1, value2);
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param object1 期待値
+	 * @param object2 実際値
 	 */
 	protected void assertEquals(Object object1, Object object2) {
 		org.junit.Assert.assertEquals(object1, object2);
 	}
+	
+	// ================================================================================================================
+	
+	// 配列比較関連 ====================================================================================================
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(boolean[] array1, boolean[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(byte[] array1, byte[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(short[] array1, short[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(int[] array1, int[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(long[] array1, long[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(float[] array1, float[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(char[] array1, char[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(double[] array1, double[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	/**
+	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
+	 * 
+	 * @param array1 期待値
+	 * @param array2 実際値
+	 */
+	protected void assertEquals(Object[] array1, Object[] array2) {
+		assertEquals(array1.length, array2.length);
+		for (int i=0; i<array1.length; i++) {
+			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+		}
+	}
+	
+	// ================================================================================================================
 	
 	/**
 	 * Object1とObject2が同じオブジェクトを参照している場合、テスト成功とする。<p/>
@@ -376,6 +561,7 @@ public class TestCaseTemplate {
 	 * 
 	 */
 	protected void fail(Throwable e) {
+		e.printStackTrace();
 		org.junit.Assert.fail(e.getMessage());
 	}
 	
@@ -386,6 +572,7 @@ public class TestCaseTemplate {
 	 * 
 	 */
 	protected void fail(AbstractMessageException e) {
+		e.printStackTrace();
 		org.junit.Assert.fail(e.getMessage());
 	}
 	
