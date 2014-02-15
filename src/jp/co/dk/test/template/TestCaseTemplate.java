@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import jp.co.dk.message.AbstractMessage;
 import jp.co.dk.message.exception.AbstractMessageException;
 import jp.co.dk.test.template.property.TestTemplateProperty;
 
@@ -213,6 +214,34 @@ public class TestCaseTemplate {
 	 */
 	protected void assertEquals(Object object1, Object object2) {
 		org.junit.Assert.assertEquals(object1, object2);
+	}
+	
+	/**
+	 * 指定の発生した例外とメッセージオブジェクトが一致する場合、テスト成功とする。
+	 * 
+	 * @param messageException 発生した例外
+	 * @param message          メッセージオブジェクト
+	 */
+	protected void assertEquals(AbstractMessageException messageException, AbstractMessage message) {
+		org.junit.Assert.assertEquals(messageException.getMessageObj(), message);
+	}
+	
+	/**
+	 * 指定の発生した例外とメッセージオブジェクトが一致する場合、テスト成功とする。
+	 * 
+	 * @param messageException 発生した例外
+	 * @param message          メッセージオブジェクト
+	 * @param replaceStr       置換文字列
+	 */
+	protected void assertEquals(AbstractMessageException messageException, AbstractMessage message, String... replaceStr) {
+		org.junit.Assert.assertEquals(messageException.getMessageObj(), message);
+		List<String> embeddedStrList = messageException.getEmbeddedStrList();
+		if (embeddedStrList == null || embeddedStrList.size() == 0) fail();
+		if (replaceStr      == null || replaceStr.length      == 0) fail();
+		if (embeddedStrList.size() != replaceStr.length) fail();
+		for (int i=0; i<embeddedStrList.size(); i++) {
+			assertEquals(embeddedStrList.get(i), replaceStr[i]);
+		}
 	}
 	
 	// ================================================================================================================
@@ -430,14 +459,24 @@ public class TestCaseTemplate {
 		if (!file2.exists()) org.junit.Assert.fail();
 		if (file1.isDirectory() || file2.isDirectory()) org.junit.Assert.fail();
 		if (file1.length() != file2.length()) org.junit.Assert.fail();
+		
 		try {
 			FileInputStream fi1 = new FileInputStream(file1);
 			FileInputStream fi2 = new FileInputStream(file2);
 			assertStreamEquals(fi1, fi2);
+			try {
+				fi1.close();
+			} catch (IOException e) {
+				fail(e);
+			}
+			try {
+				fi2.close();
+			} catch (IOException e) {
+				fail(e);
+			}
 		} catch (IOException e) {
 			fail(e);
 		}
-		
 	}
 	
 	/**
@@ -544,6 +583,16 @@ public class TestCaseTemplate {
 	 */
 	protected void fail() {
 		org.junit.Assert.fail();
+	}
+	
+	/**
+	 * テスト失敗。<p/>
+	 * 
+	 * このメソッドが実行された場合、試験失敗とする。
+	 * 
+	 */
+	protected void fail(String message) {
+		org.junit.Assert.fail(message);
 	}
 	
 	/**
@@ -896,7 +945,9 @@ public class TestCaseTemplate {
 		if (file == null || file.exists()) {
 			return file;
 		}
-		file.mkdirs();
+		if (!file.mkdirs()) {
+			fail(new StringBuilder("failed to create directory. dir=[").append(file.toString()).append(']').toString());
+		}
 		return file;
 	}
 	
@@ -914,7 +965,7 @@ public class TestCaseTemplate {
 		try {
 			file.createNewFile();
 		} catch (IOException e) {
-			fail(e);
+			fail(new StringBuilder(e.getMessage()).append(" file=[").append(file.toString()).append(']').toString());
 		}
 		return file;
 	}
@@ -930,7 +981,9 @@ public class TestCaseTemplate {
 			return ;
 		}
 		if (file.isFile()) {
-			file.delete();
+			if (!file.delete()) {
+				fail(new StringBuilder("failed to delete directory or file. file=[").append(file.toString()).append(']').toString());
+			}
 			return;
 		}
 		if (file.isDirectory()) {
@@ -938,7 +991,9 @@ public class TestCaseTemplate {
 			for (File deleteFile : files) {
 				this.delete(deleteFile);
 			}
-			file.delete();
+			if (!file.delete()) {
+				fail(new StringBuilder("failed to delete directory or file. file=[").append(file.toString()).append(']').toString());
+			}
 		}
 	}
 	
@@ -990,7 +1045,9 @@ public class TestCaseTemplate {
 	 * @return ファイルオブジェクト
 	 */
 	protected java.io.File setUpdateTimeToFile(java.io.File file, Date date) {
-		file.setLastModified(date.getTime());
+		if (!file.setLastModified(date.getTime())) {;
+			fail(new StringBuilder("failed to update lastmodified. file=[").append(file.toString()).append(']').toString());
+		}
 		return file;
 	}
 	/**

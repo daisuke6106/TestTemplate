@@ -215,47 +215,39 @@ public class TestTestTemplate extends TestCaseTemplate {
 		// 指定の範囲を引数に渡した場合、その範囲内の値を返却すること。
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(0, 1);
-			System.out.println(randomInt);
 			assertTrue(0 <= randomInt || randomInt >= 1);
 		}
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(0, 10000);
-			System.out.println(randomInt);
 			assertTrue(0 <= randomInt || randomInt >= 10000);
 		}
 		
 		// 指定の範囲を引数に渡した場合、その範囲内の値を返却すること。(start>finの場合)
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(1, 0);
-			System.out.println(randomInt);
 			assertTrue(0 <= randomInt || randomInt >= 1);
 		}
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(10000, 0);
-			System.out.println(randomInt);
 			assertTrue(0 <= randomInt || randomInt >= 10000);
 		}
 		
 		// 指定の範囲を引数に渡した場合、その範囲内の値を返却すること。（マイナス値複合）
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(-1, 0);
-			System.out.println(randomInt);
 			assertTrue(-1 <= randomInt || randomInt >= 1);
 		}
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(-10000, 0);
-			System.out.println(randomInt);
 			assertTrue(-10000 <= randomInt || randomInt >= 10000);
 		}
 		
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(1, -1);
-			System.out.println(randomInt);
 			assertTrue(-1 <= randomInt || randomInt >= 1);
 		}
 		for (int i=0; i<10; i++) {
 			int randomInt = super.getRandomInteger(10000, -10000);
-			System.out.println(randomInt);
 			assertTrue(-10000 <= randomInt || randomInt >= 10000);
 		}
 		
@@ -284,7 +276,6 @@ public class TestTestTemplate extends TestCaseTemplate {
 		list2.add("c");
 		for (int i=0; i<10000; i++) {
 			String randomElement = super.getRandomElement(list2);
-			System.out.println(randomElement);
 			assertTrue(randomElement.equals("a") || randomElement.equals("b") || randomElement.equals("c"));
 		}
 		
