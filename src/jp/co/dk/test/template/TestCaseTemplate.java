@@ -125,7 +125,6 @@ public class TestCaseTemplate {
 	}
 	
 	// 比較関連     ====================================================================================================
-	
 	/**
 	 * 指定の期待値と実際値が一致する場合、テスト成功とする。
 	 * 
@@ -133,7 +132,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(boolean value1, boolean value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Boolean(value1), new Boolean(value2));
 	}
 	
 	/**
@@ -143,7 +142,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(byte value1, byte value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Byte(value1), new Byte(value2));
 	}
 	
 	/**
@@ -153,7 +152,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(short value1, short value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Short(value1), new Short(value2));
 	}
 	
 	/**
@@ -163,7 +162,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(int value1, int value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Integer(value1), new Integer(value2));
 	}
 	
 	/**
@@ -173,7 +172,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(long value1, long value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Long(value1), new Long(value2));
 	}
 	
 	/**
@@ -183,7 +182,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(float value1, float value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Float(value1), new Float(value2));
 	}
 	
 	/**
@@ -193,7 +192,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(char value1, char value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Character(value1), new Character(value2));
 	}
 	
 	/**
@@ -203,7 +202,7 @@ public class TestCaseTemplate {
 	 * @param value2 実際値
 	 */
 	protected void assertEquals(double value1, double value2) {
-		org.junit.Assert.assertEquals(value1, value2);
+		org.junit.Assert.assertEquals(new Double(value1), new Double(value2));
 	}
 	
 	/**
@@ -257,7 +256,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(boolean[] array1, boolean[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Boolean(array1[i]), new Boolean(array2[i])); 
 		}
 	}
 	
@@ -270,7 +269,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(byte[] array1, byte[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Byte(array1[i]), new Byte(array2[i])); 
 		}
 	}
 	
@@ -283,7 +282,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(short[] array1, short[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Short(array1[i]), new Short(array2[i])); 
 		}
 	}
 	
@@ -296,7 +295,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(int[] array1, int[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Integer(array1[i]), new Integer(array2[i])); 
 		}
 	}
 	
@@ -309,7 +308,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(long[] array1, long[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Long(array1[i]), new Long(array2[i])); 
 		}
 	}
 	
@@ -322,7 +321,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(float[] array1, float[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Float(array1[i]), new Float(array2[i])); 
 		}
 	}
 	
@@ -335,7 +334,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(char[] array1, char[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Character(array1[i]), new Character(array2[i])); 
 		}
 	}
 	
@@ -348,7 +347,7 @@ public class TestCaseTemplate {
 	protected void assertEquals(double[] array1, double[] array2) {
 		assertEquals(array1.length, array2.length);
 		for (int i=0; i<array1.length; i++) {
-			org.junit.Assert.assertEquals(array1[i], array2[i]); 
+			org.junit.Assert.assertEquals(new Double(array1[i]), new Double(array2[i])); 
 		}
 	}
 	
@@ -367,79 +366,7 @@ public class TestCaseTemplate {
 	
 	// ================================================================================================================
 	
-	/**
-	 * Object1とObject2が同じオブジェクトを参照している場合、テスト成功とする。<p/>
-	 * 同じオブジェクトでなかった場合はFailure（失敗）になります。
-	 * 
-	 * @param object1 期待値
-	 * @param object2 実際値
-	 */
-	protected void assertSame(Object object1, Object object2) {
-		org.junit.Assert.assertSame(object1, object2);
-	}
-	
-	/**
-	 * 指定のobjectが NULL でない場合、テスト成功とする。
-	 * 
-	 * @param object 検証値
-	 */
-	protected void assertNotNull(Object object) {
-		org.junit.Assert.assertNotNull(object);
-	}
-	
-	/**
-	 * 指定のobjectが NULL の場合、テスト成功とする。
-	 * 
-	 * @param object 検証値
-	 */
-	protected void assertNull(Object object) {
-		org.junit.Assert.assertNull(object);
-	}
-	
-	/**
-	 * privateメソッドを実行します<p/>
-	 * テスト対象のターゲットクラスのインスタンス、実行対象のprivateメソッド名称、メソッドの引数を元に<br/>
-	 * privateメソッドを実行し、戻り値をオブジェクト型として返却する。<br/>
-	 * 
-	 * privateメソッドで例外が発生しthrowされた場合、または呼び出しに失敗した場合、例外が発生する。<br/>
-	 * 
-	 * @param targetInstance テスト対象のターゲットクラスのインスタンス
-	 * @param methodName 実行対象のprivateメソッド名称
-	 * @param objects メソッドの引数
-	 * @return privateメソッドの戻り値
-	 * @throws InvocationTargetException privateメソッド実行で発生した例外
-	 */
-	protected Object executePrivateMethod(Object object, String methodName, Object... parameters) throws Throwable{
-		Class classObject = object.getClass();
-		Method method = null;
-		try {
-			if (parameters == null || parameters.length == 0) {
-				method = classObject.getDeclaredMethod(methodName);
-			} else {
-				Class[] classList = new Class[parameters.length];
-				for (int i = 0 ; i < parameters.length; i++) {
-					classList[i] = (parameters[i].getClass());
-				}
-				method = classObject.getDeclaredMethod(methodName, classList);
-			}
-			method.setAccessible( true );
-		} catch (NoSuchMethodException e) {
-			fail(e);
-		} catch (SecurityException e) {
-			fail(e);
-		}
-		try {
-			return method.invoke(object, parameters);
-		} catch (IllegalAccessException e) {
-			fail(e);
-		} catch (IllegalArgumentException e) {
-			fail(e);
-		} catch (InvocationTargetException e) {
-			throw e;
-		}
-		return null;
-	}
-	
+	// ファイル・データ比較関連 =========================================================================================
 	/**
 	 * 指定の実際値ファイルと期待値ファイルの内容が一致する場合、テスト成功とする。<p/>
 	 * 
@@ -504,19 +431,43 @@ public class TestCaseTemplate {
 		}
 	}
 	
-	/**
-	 * 指定の実際値に文字列が含まれている場合、テスト成功とする。
-	 * 
-	 * @param baseString 実際値
-	 * @param str 検出対象文字列
-	 */
-	protected void assertHasString(String baseString, String str) {
-		int index = baseString.indexOf(str);
-		if (index == -1) fail(); 
-	}
+	// ================================================================================================================
 	
+	// AssertThat関連 ====================================================================================================
 	protected <T> void assertThat(T actual, Matcher<T> matcher) {
 		org.junit.Assert.assertThat(actual, matcher);
+	}
+	
+	protected void assertThat(boolean actual, Matcher<Boolean> matcher) {
+		org.junit.Assert.assertThat(new Boolean(actual), matcher);
+	}
+
+	protected void assertThat(byte actual, Matcher<Byte> matcher) {
+		org.junit.Assert.assertThat(new Byte(actual), matcher);
+	}
+
+	protected void assertThat(double actual, Matcher<Double> matcher) {
+		org.junit.Assert.assertThat(new Double(actual), matcher);
+	}
+
+	protected void assertThat(float actual, Matcher<Float> matcher) {
+		org.junit.Assert.assertThat(new Float(actual), matcher);
+	}
+
+	protected void assertThat(int actual, Matcher<Integer> matcher) {
+		org.junit.Assert.assertThat(new Integer(actual), matcher);
+	}
+
+	protected void assertThat(long actual, Matcher<Long> matcher) {
+		org.junit.Assert.assertThat(new Long(actual), matcher);
+	}
+
+	protected void assertThat(short actual, Matcher<Short> matcher) {
+		org.junit.Assert.assertThat(new Short(actual), matcher);
+	}
+
+	protected void assertThat(char actual, Matcher<Character> matcher) {
+		org.junit.Assert.assertThat(new Character(actual), matcher);
 	}
 	
 	protected <T> Matcher<T> allOf (Matcher<? extends T>... matchers) {
@@ -527,12 +478,40 @@ public class TestCaseTemplate {
 		return org.hamcrest.core.AllOf.allOf(matchers);
 	}
 	
-	protected <T> Matcher<T> is (Matcher<T> matcher) {
+	protected <T> Matcher<T> is (T matcher) {
 		return org.hamcrest.core.Is.is(matcher);
 	}
 	
-	protected <T> Matcher<T> is (T matcher) {
-		return org.hamcrest.core.Is.is(matcher);
+	protected Matcher<Boolean> is (boolean matcher) {
+		return org.hamcrest.core.Is.is(new Boolean(matcher));
+	}
+	
+	protected Matcher<Byte> is (byte matcher) {
+		return org.hamcrest.core.Is.is(new Byte(matcher));
+	}
+	
+	protected Matcher<Double> is (double matcher) {
+		return org.hamcrest.core.Is.is(new Double(matcher));
+	}
+	
+	protected Matcher<Float> is (float matcher) {
+		return org.hamcrest.core.Is.is(new Float(matcher));
+	}
+	
+	protected Matcher<Integer> is (int matcher) {
+		return org.hamcrest.core.Is.is(new Integer(matcher));
+	}
+	
+	protected Matcher<Long> is (long matcher) {
+		return org.hamcrest.core.Is.is(new Long(matcher));
+	}
+	
+	protected Matcher<Short> is (short matcher) {
+		return org.hamcrest.core.Is.is(new Short(matcher));
+	}
+	
+	protected Matcher<Character> is (char matcher) {
+		return org.hamcrest.core.Is.is(new Character(matcher));
 	}
 	
 	protected <T> Matcher<T> anything () {
@@ -547,12 +526,40 @@ public class TestCaseTemplate {
 		return org.hamcrest.core.IsEqual.equalTo(operand);
 	}
 	
-	protected <T> Matcher<T> not (Matcher<T> matchers) {
+	protected <T> Matcher<T> not (T matchers) {
 		return org.hamcrest.core.IsNot.not(matchers);
 	}
 	
-	protected <T> Matcher<T> not (T matchers) {
-		return org.hamcrest.core.IsNot.not(matchers);
+	protected Matcher<Boolean> not (boolean matcher) {
+		return org.hamcrest.core.IsNot.not(new Boolean(matcher));
+	}
+	
+	protected Matcher<Byte> not (byte matcher) {
+		return org.hamcrest.core.IsNot.not(new Byte(matcher));
+	}
+	
+	protected Matcher<Double> not (double matcher) {
+		return org.hamcrest.core.IsNot.not(new Double(matcher));
+	}
+	
+	protected Matcher<Float> not (float matcher) {
+		return org.hamcrest.core.IsNot.not(new Float(matcher));
+	}
+	
+	protected Matcher<Integer> not (int matcher) {
+		return org.hamcrest.core.IsNot.not(new Integer(matcher));
+	}
+	
+	protected Matcher<Long> not (long matcher) {
+		return org.hamcrest.core.IsNot.not(new Long(matcher));
+	}
+	
+	protected Matcher<Short> not (short matcher) {
+		return org.hamcrest.core.IsNot.not(new Short(matcher));
+	}
+	
+	protected Matcher<Character> not (char matcher) {
+		return org.hamcrest.core.IsNot.not(new Character(matcher));
 	}
 	
 	protected <T> Matcher<T> nullValue () {
@@ -570,7 +577,96 @@ public class TestCaseTemplate {
 	protected <T> Matcher<T> notNullValue (@SuppressWarnings("unused") Class<T> type) {
 		return org.hamcrest.core.IsNull.notNullValue(type);
 	}
-		
+	
+	// ===================================================================================================================
+	
+	// その他比較関連 =====================================================================================================
+	/**
+	 * 指定の実際値に文字列が含まれている場合、テスト成功とする。
+	 * 
+	 * @param baseString 実際値
+	 * @param str 検出対象文字列
+	 */
+	protected void assertHasString(String baseString, String str) {
+		int index = baseString.indexOf(str);
+		if (index == -1) fail(); 
+	}
+	
+	/**
+	 * Object1とObject2が同じオブジェクトを参照している場合、テスト成功とする。<p/>
+	 * 同じオブジェクトでなかった場合はFailure（失敗）になります。
+	 * 
+	 * @param object1 期待値
+	 * @param object2 実際値
+	 */
+	protected void assertSame(Object object1, Object object2) {
+		org.junit.Assert.assertSame(object1, object2);
+	}
+	
+	/**
+	 * 指定のobjectが NULL でない場合、テスト成功とする。
+	 * 
+	 * @param object 検証値
+	 */
+	protected void assertNotNull(Object object) {
+		org.junit.Assert.assertNotNull(object);
+	}
+	
+	/**
+	 * 指定のobjectが NULL の場合、テスト成功とする。
+	 * 
+	 * @param object 検証値
+	 */
+	protected void assertNull(Object object) {
+		org.junit.Assert.assertNull(object);
+	}
+	// ===================================================================================================================
+	
+	/**
+	 * privateメソッドを実行します<p/>
+	 * テスト対象のターゲットクラスのインスタンス、実行対象のprivateメソッド名称、メソッドの引数を元に<br/>
+	 * privateメソッドを実行し、戻り値をオブジェクト型として返却する。<br/>
+	 * 
+	 * privateメソッドで例外が発生しthrowされた場合、または呼び出しに失敗した場合、例外が発生する。<br/>
+	 * 
+	 * @param targetInstance テスト対象のターゲットクラスのインスタンス
+	 * @param methodName 実行対象のprivateメソッド名称
+	 * @param objects メソッドの引数
+	 * @return privateメソッドの戻り値
+	 * @throws InvocationTargetException privateメソッド実行で発生した例外
+	 */
+	protected Object executePrivateMethod(Object object, String methodName, Object... parameters) throws Throwable{
+		Class classObject = object.getClass();
+		Method method = null;
+		try {
+			if (parameters == null || parameters.length == 0) {
+				method = classObject.getDeclaredMethod(methodName);
+			} else {
+				Class[] classList = new Class[parameters.length];
+				for (int i = 0 ; i < parameters.length; i++) {
+					classList[i] = (parameters[i].getClass());
+				}
+				method = classObject.getDeclaredMethod(methodName, classList);
+			}
+			method.setAccessible( true );
+		} catch (NoSuchMethodException e) {
+			fail(e);
+		} catch (SecurityException e) {
+			fail(e);
+		}
+		try {
+			return method.invoke(object, parameters);
+		} catch (IllegalAccessException e) {
+			fail(e);
+		} catch (IllegalArgumentException e) {
+			fail(e);
+		} catch (InvocationTargetException e) {
+			throw e;
+		}
+		return null;
+	}
+	
+	
 	protected void success(Throwable e) {
 		
 	}
@@ -721,7 +817,7 @@ public class TestCaseTemplate {
 		List<Integer> indexList = new ArrayList<Integer>(); 
 		if (lists == null) return indexList;
 		for (int index = 0; index<lists.size() ;index++) {
-			if (asList(lists.get(index), list)) indexList.add(index); 
+			if (asList(lists.get(index), list)) indexList.add(new Integer(index)); 
 		}
 		return indexList;
 	}
@@ -1050,6 +1146,7 @@ public class TestCaseTemplate {
 		}
 		return file;
 	}
+	
 	/**
 	 * equalsメソッドのテストテンプレート<p/>
 	 * 
@@ -1084,25 +1181,25 @@ public class TestCaseTemplate {
 	 */
 	protected void testEquals(Object object1, Object object2, Object object3, List<Object> differentObjectList) {
 		// 反射性 (reflexive): null 以外の参照値 x について、x.equals(x) は true を返す
-		assertThat(object1.equals(object1), is (true));
-		assertThat(object2.equals(object2), is (true));
-		assertThat(object3.equals(object3), is (true));
+		assertThat(new Boolean(object1.equals(object1)), is (new Boolean(true)));
+		assertThat(new Boolean(object2.equals(object2)), is (new Boolean(true)));
+		assertThat(new Boolean(object3.equals(object3)), is (new Boolean(true)));
 		
 		// 対称性 (symmetric): null 以外の参照値 x と y について、x.equals(y) は、y.equals(x) が true を返す場合だけ true を返す
-		assertThat(object1.equals(object2) && object2.equals(object1), is (true));
+		assertThat(new Boolean(object1.equals(object2) && object2.equals(object1)), is (new Boolean(true)));
 		
 		// 推移性 (transitive): null 以外の参照値 x、y、z について、x.equals(y) が true を返し、かつ y.equals(z) が true を返す場合に、x.equals(z) は true を返す
-		assertThat(object1.equals(object2) && object2.equals(object3) && object1.equals(object3), is (true));
+		assertThat(new Boolean(object1.equals(object2) && object2.equals(object3) && object1.equals(object3)), is (new Boolean(true)));
 		
 		// null 以外の参照値 x について、x.equals(null) は false を返す
-		assertThat(object1.equals(null), is (false));
-		assertThat(object2.equals(null), is (false));
-		assertThat(object3.equals(null), is (false));
+		assertThat(new Boolean(object1.equals(null)), is (new Boolean(false)));
+		assertThat(new Boolean(object2.equals(null)), is (new Boolean(false)));
+		assertThat(new Boolean(object3.equals(null)), is (new Boolean(false)));
 		
 		// hashCodeの一貫性
-		assertThat(object1.hashCode() == object2.hashCode(), is (true));
-		assertThat(object2.hashCode() == object3.hashCode(), is (true));
-		assertThat(object1.hashCode() == object3.hashCode(), is (true));
+		assertThat(new Boolean(object1.hashCode() == object2.hashCode()), is (new Boolean(true)));
+		assertThat(new Boolean(object2.hashCode() == object3.hashCode()), is (new Boolean(true)));
+		assertThat(new Boolean(object1.hashCode() == object3.hashCode()), is (new Boolean(true)));
 		
 		// toStringの一貫性
 		assertThat(object1.toString() , is (object2.toString()));
@@ -1111,14 +1208,14 @@ public class TestCaseTemplate {
 		
 		// 異なるオブジェクト一覧に設定されているオブジェクトはすべてfalseとなること
 		for (Object diffObject : differentObjectList) {
-			assertThat(object1.equals(diffObject), is (false));
+			assertThat(new Boolean(object1.equals(diffObject)), is (new Boolean(false)));
 		}
 		
 		// 整合性 (consistent): null 以外の参照値 x および y について、x.equals(y) を複数呼び出すと常に true を返すか、常に false を返す。これは、オブジェクトに対する equals による比較で使われた情報が変更されていないことが条件である
 		Object diffObject = differentObjectList.get(0);
 		for (int i = 0; i<100; i++) {
-			assertThat(object1.equals(object2), is (true));
-			assertThat(object1.equals(diffObject), is (false));
+			assertThat(new Boolean(object1.equals(object2)), is (new Boolean(true)));
+			assertThat(new Boolean(object1.equals(diffObject)), is (new Boolean(false)));
 		}
 	}
 	
@@ -1174,6 +1271,3 @@ public class TestCaseTemplate {
 		return null;
 	}
 }
-
-// 参考になりそうなページのURL
-// http://d.hatena.ne.jp/irof/20111216/p1

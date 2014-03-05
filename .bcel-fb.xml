@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="2.0.2" sequence="0" timestamp="1392483518224" analysisTimestamp="1392483518264" release="">
+<BugCollection version="2.0.2" sequence="0" timestamp="1394038372520" analysisTimestamp="1394038372554" release="">
   <Project projectName="">
     <Jar>/home/dk/projects/TestTemplate/testtemplate.jar</Jar>
     <AuxClasspathEntry>/home/dk/projects/TestTemplate/lib/junit-4.10.jar</AuxClasspathEntry>
@@ -35,66 +35,527 @@
     </Field>
     <SourceLine classname="jp.co.dk.test.template.MemoryCounter" start="71" end="71" startBytecode="105" endBytecode="105" sourcefile="MemoryCounter.java" sourcepath="jp/co/dk/test/template/MemoryCounter.java"/>
   </BugInstance>
-  <BugInstance type="EC_NULL_ARG" priority="2" abbrev="EC" category="CORRECTNESS">
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
     <Class classname="jp.co.dk.test.template.TestCaseTemplate">
-      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1174" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="(ZZ)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="135" end="136" startBytecode="0" endBytecode="85" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="135" end="135" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="([Z[Z)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="257" end="261" startBytecode="0" endBytecode="148" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="259" end="259" startBytecode="23" endBytecode="23" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertThat" signature="(ZLorg/hamcrest/Matcher;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="442" end="443" startBytecode="0" endBytecode="96" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="442" end="442" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="is" signature="(Z)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="486" end="486" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="486" end="486" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="not" signature="(Z)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="534" end="534" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="534" end="534" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
     </Class>
     <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="testEquals" signature="(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/List;)V" isStatic="false">
-      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1087" end="1123" startBytecode="0" endBytecode="220" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1184" end="1220" startBytecode="0" endBytecode="1142" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
     </Method>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1098" end="1098" startBytecode="143" endBytecode="143" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1099" end="1099" startBytecode="163" endBytecode="163" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1100" end="1100" startBytecode="183" endBytecode="183" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1184" end="1184" startBytecode="10" endBytecode="10" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1185" end="1185" startBytecode="38" endBytecode="38" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1186" end="1186" startBytecode="66" endBytecode="66" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1189" end="1189" startBytecode="110" endBytecode="110" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1192" end="1192" startBytecode="162" endBytecode="162" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1195" end="1195" startBytecode="190" endBytecode="190" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1196" end="1196" startBytecode="218" endBytecode="218" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1197" end="1197" startBytecode="246" endBytecode="246" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1200" end="1200" startBytecode="285" endBytecode="285" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1201" end="1201" startBytecode="324" endBytecode="324" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1202" end="1202" startBytecode="363" endBytecode="363" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1211" end="1211" startBytecode="468" endBytecode="468" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1217" end="1217" startBytecode="519" endBytecode="519" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1218" end="1218" startBytecode="548" endBytecode="548" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="(BB)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="145" end="146" startBytecode="0" endBytecode="85" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="&lt;init&gt;" signature="(B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Byte" start="297" end="299" startBytecode="0" endBytecode="41" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="valueOf" signature="(B)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Byte" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="145" end="145" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="(CC)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="195" end="196" startBytecode="0" endBytecode="85" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character" start="4353" end="4355" startBytecode="0" endBytecode="41" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="195" end="195" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="(II)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="165" end="166" startBytecode="0" endBytecode="85" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="165" end="165" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="(JJ)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="175" end="176" startBytecode="0" endBytecode="85" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="684" end="686" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="175" end="175" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="(SS)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="155" end="156" startBytecode="0" endBytecode="85" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="&lt;init&gt;" signature="(S)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Short" start="302" end="304" startBytecode="0" endBytecode="41" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="valueOf" signature="(S)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Short" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="155" end="155" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="([B[B)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="270" end="274" startBytecode="0" endBytecode="148" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="&lt;init&gt;" signature="(B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Byte" start="297" end="299" startBytecode="0" endBytecode="41" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="valueOf" signature="(B)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Byte" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="272" end="272" startBytecode="23" endBytecode="23" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="([C[C)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="335" end="339" startBytecode="0" endBytecode="148" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character" start="4353" end="4355" startBytecode="0" endBytecode="41" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="337" end="337" startBytecode="23" endBytecode="23" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="([I[I)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="296" end="300" startBytecode="0" endBytecode="148" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="298" end="298" startBytecode="23" endBytecode="23" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="([J[J)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="309" end="313" startBytecode="0" endBytecode="148" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="684" end="686" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="311" end="311" startBytecode="23" endBytecode="23" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertEquals" signature="([S[S)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="283" end="287" startBytecode="0" endBytecode="148" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="&lt;init&gt;" signature="(S)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Short" start="302" end="304" startBytecode="0" endBytecode="41" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="valueOf" signature="(S)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Short" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="285" end="285" startBytecode="23" endBytecode="23" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertThat" signature="(BLorg/hamcrest/Matcher;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="446" end="447" startBytecode="0" endBytecode="96" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="&lt;init&gt;" signature="(B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Byte" start="297" end="299" startBytecode="0" endBytecode="41" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="valueOf" signature="(B)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Byte" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="446" end="446" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertThat" signature="(CLorg/hamcrest/Matcher;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="470" end="471" startBytecode="0" endBytecode="96" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character" start="4353" end="4355" startBytecode="0" endBytecode="41" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="470" end="470" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertThat" signature="(ILorg/hamcrest/Matcher;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="458" end="459" startBytecode="0" endBytecode="96" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="458" end="458" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertThat" signature="(JLorg/hamcrest/Matcher;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="462" end="463" startBytecode="0" endBytecode="96" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="684" end="686" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="462" end="462" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertThat" signature="(SLorg/hamcrest/Matcher;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="466" end="467" startBytecode="0" endBytecode="96" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="&lt;init&gt;" signature="(S)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Short" start="302" end="304" startBytecode="0" endBytecode="41" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="valueOf" signature="(S)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Short" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="466" end="466" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="getEqualsListIndex" signature="(Ljava/util/List;Ljava/util/List;)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="817" end="822" startBytecode="0" endBytecode="232" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="820" end="820" startBytecode="54" endBytecode="54" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="is" signature="(B)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="490" end="490" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="&lt;init&gt;" signature="(B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Byte" start="297" end="299" startBytecode="0" endBytecode="41" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="valueOf" signature="(B)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Byte" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="490" end="490" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="is" signature="(C)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="514" end="514" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character" start="4353" end="4355" startBytecode="0" endBytecode="41" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="514" end="514" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="is" signature="(I)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="502" end="502" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="502" end="502" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="is" signature="(J)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="506" end="506" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="684" end="686" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="506" end="506" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="is" signature="(S)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="510" end="510" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="&lt;init&gt;" signature="(S)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Short" start="302" end="304" startBytecode="0" endBytecode="41" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="valueOf" signature="(S)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Short" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="510" end="510" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="not" signature="(B)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="538" end="538" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="&lt;init&gt;" signature="(B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Byte" start="297" end="299" startBytecode="0" endBytecode="41" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="valueOf" signature="(B)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Byte" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="538" end="538" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="not" signature="(C)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="562" end="562" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character" start="4353" end="4355" startBytecode="0" endBytecode="41" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character" sourcefile="Character.java" sourcepath="java/lang/Character.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="562" end="562" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="not" signature="(I)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="550" end="550" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="550" end="550" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="not" signature="(J)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="554" end="554" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="684" end="686" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="554" end="554" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="not" signature="(S)Lorg/hamcrest/Matcher;" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="558" end="558" startBytecode="0" endBytecode="63" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="&lt;init&gt;" signature="(S)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Short" start="302" end="304" startBytecode="0" endBytecode="41" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <Method classname="java.lang.Short" name="valueOf" signature="(S)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Short" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="558" end="558" startBytecode="5" endBytecode="5" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+  </BugInstance>
+  <BugInstance type="EC_NULL_ARG" priority="2" abbrev="EC" category="CORRECTNESS">
+    <Class classname="jp.co.dk.test.template.TestCaseTemplate">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Class>
+    <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="testEquals" signature="(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1184" end="1220" startBytecode="0" endBytecode="276" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    </Method>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1195" end="1195" startBytecode="187" endBytecode="187" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1196" end="1196" startBytecode="215" endBytecode="215" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="1197" end="1197" startBytecode="243" endBytecode="243" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
   </BugInstance>
   <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" abbrev="OBL" category="EXPERIMENTAL">
     <Class classname="jp.co.dk.test.template.TestCaseTemplate">
-      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1174" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="42" end="1271" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
     </Class>
     <Method classname="jp.co.dk.test.template.TestCaseTemplate" name="assertFileEquals" signature="(Ljava/io/File;Ljava/io/File;)V" isStatic="false">
-      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="457" end="480" startBytecode="0" endBytecode="394" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
+      <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="384" end="407" startBytecode="0" endBytecode="394" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java"/>
     </Method>
     <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
       <SourceLine classname="java.io.InputStream" start="45" end="363" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
     </Class>
     <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="464" end="464" startBytecode="68" endBytecode="68" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="465" end="465" startBytecode="72" endBytecode="72" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="477" end="477" startBytecode="123" endBytecode="123" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="478" end="478" startBytecode="124" endBytecode="124" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
-    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="480" end="480" startBytecode="129" endBytecode="129" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="391" end="391" startBytecode="68" endBytecode="68" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="392" end="392" startBytecode="72" endBytecode="72" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="404" end="404" startBytecode="123" endBytecode="123" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="405" end="405" startBytecode="124" endBytecode="124" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="jp.co.dk.test.template.TestCaseTemplate" start="407" end="407" startBytecode="129" endBytecode="129" sourcefile="TestCaseTemplate.java" sourcepath="jp/co/dk/test/template/TestCaseTemplate.java" role="SOURCE_LINE_PATH_CONTINUES"/>
     <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
   </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 16 Feb 2014 01:58:38 +0900" total_classes="5" referenced_classes="73" total_bugs="5" total_size="538" num_packages="2" vm_version="22.0-b10" cpu_seconds="15.69" clock_seconds="10.26" peak_mbytes="153.31" alloc_mbytes="780.50" gc_seconds="0.20" priority_2="5">
-    <PackageStats package="jp.co.dk.test.template" total_bugs="5" total_types="4" total_size="517" priority_2="5">
+  <FindBugsSummary timestamp="Thu, 6 Mar 2014 01:52:52 +0900" total_classes="5" referenced_classes="74" total_bugs="37" total_size="590" num_packages="2" vm_version="22.0-b10" cpu_seconds="20.27" clock_seconds="14.47" peak_mbytes="153.42" alloc_mbytes="780.50" gc_seconds="0.24" priority_2="37">
+    <PackageStats package="jp.co.dk.test.template" total_bugs="37" total_types="4" total_size="569" priority_2="37">
       <ClassStats class="jp.co.dk.test.template.MemoryCounter" sourceFile="MemoryCounter.java" interface="false" size="53" bugs="3" priority_2="3"/>
       <ClassStats class="jp.co.dk.test.template.RandomSelectRule" sourceFile="RandomSelectRule.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="jp.co.dk.test.template.TestCaseTemplate" sourceFile="TestCaseTemplate.java" interface="false" size="427" bugs="2" priority_2="2"/>
+      <ClassStats class="jp.co.dk.test.template.TestCaseTemplate" sourceFile="TestCaseTemplate.java" interface="false" size="479" bugs="34" priority_2="34"/>
       <ClassStats class="jp.co.dk.test.template.TimeCounter" sourceFile="TimeCounter.java" interface="false" size="35" bugs="0"/>
     </PackageStats>
     <PackageStats package="jp.co.dk.test.template.property" total_bugs="0" total_types="1" total_size="21">
       <ClassStats class="jp.co.dk.test.template.property.TestTemplateProperty" sourceFile="TestTemplateProperty.java" interface="false" size="21" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1219" invocations="542" avgMicrosecondsPerInvocation="2250" maxMicrosecondsPerInvocation="44095" standardDeviationMircosecondsPerInvocation="4833"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="760" invocations="73" avgMicrosecondsPerInvocation="10421" maxMicrosecondsPerInvocation="114683" standardDeviationMircosecondsPerInvocation="18302"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="520" invocations="104" avgMicrosecondsPerInvocation="5005" maxMicrosecondsPerInvocation="75370" standardDeviationMircosecondsPerInvocation="10243"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="506" invocations="111" avgMicrosecondsPerInvocation="4564" maxMicrosecondsPerInvocation="67139" standardDeviationMircosecondsPerInvocation="8689"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="473" invocations="104" avgMicrosecondsPerInvocation="4551" maxMicrosecondsPerInvocation="119725" standardDeviationMircosecondsPerInvocation="12234"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="436" invocations="111" avgMicrosecondsPerInvocation="3931" maxMicrosecondsPerInvocation="48381" standardDeviationMircosecondsPerInvocation="6625"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="413" invocations="104" avgMicrosecondsPerInvocation="3971" maxMicrosecondsPerInvocation="77708" standardDeviationMircosecondsPerInvocation="8974"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="347" invocations="73" avgMicrosecondsPerInvocation="4759" maxMicrosecondsPerInvocation="46630" standardDeviationMircosecondsPerInvocation="7622"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="317" invocations="17" avgMicrosecondsPerInvocation="18679" maxMicrosecondsPerInvocation="313280" standardDeviationMircosecondsPerInvocation="73651"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="288" invocations="104" avgMicrosecondsPerInvocation="2776" maxMicrosecondsPerInvocation="22550" standardDeviationMircosecondsPerInvocation="4565"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="263" invocations="242" avgMicrosecondsPerInvocation="1089" maxMicrosecondsPerInvocation="38036" standardDeviationMircosecondsPerInvocation="3085"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="219" invocations="73" avgMicrosecondsPerInvocation="3003" maxMicrosecondsPerInvocation="37282" standardDeviationMircosecondsPerInvocation="6454"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="198" invocations="73" avgMicrosecondsPerInvocation="2714" maxMicrosecondsPerInvocation="33130" standardDeviationMircosecondsPerInvocation="4763"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="158" invocations="5" avgMicrosecondsPerInvocation="31602" maxMicrosecondsPerInvocation="151184" standardDeviationMircosecondsPerInvocation="59807"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="155" invocations="510" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="10637" standardDeviationMircosecondsPerInvocation="922"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="154" invocations="73" avgMicrosecondsPerInvocation="2122" maxMicrosecondsPerInvocation="25229" standardDeviationMircosecondsPerInvocation="4057"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="144" invocations="105" avgMicrosecondsPerInvocation="1374" maxMicrosecondsPerInvocation="112106" standardDeviationMircosecondsPerInvocation="10877"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="134" invocations="95" avgMicrosecondsPerInvocation="1411" maxMicrosecondsPerInvocation="40666" standardDeviationMircosecondsPerInvocation="4327"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="133" invocations="102" avgMicrosecondsPerInvocation="1304" maxMicrosecondsPerInvocation="17466" standardDeviationMircosecondsPerInvocation="2605"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1380" invocations="547" avgMicrosecondsPerInvocation="2523" maxMicrosecondsPerInvocation="52880" standardDeviationMircosecondsPerInvocation="6060"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="736" invocations="126" avgMicrosecondsPerInvocation="5843" maxMicrosecondsPerInvocation="147654" standardDeviationMircosecondsPerInvocation="14772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="732" invocations="133" avgMicrosecondsPerInvocation="5507" maxMicrosecondsPerInvocation="109437" standardDeviationMircosecondsPerInvocation="12105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="729" invocations="126" avgMicrosecondsPerInvocation="5785" maxMicrosecondsPerInvocation="97678" standardDeviationMircosecondsPerInvocation="10930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="716" invocations="126" avgMicrosecondsPerInvocation="5685" maxMicrosecondsPerInvocation="146596" standardDeviationMircosecondsPerInvocation="14261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="714" invocations="74" avgMicrosecondsPerInvocation="9655" maxMicrosecondsPerInvocation="87768" standardDeviationMircosecondsPerInvocation="17032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="708" invocations="133" avgMicrosecondsPerInvocation="5330" maxMicrosecondsPerInvocation="102653" standardDeviationMircosecondsPerInvocation="11137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="436" invocations="126" avgMicrosecondsPerInvocation="3465" maxMicrosecondsPerInvocation="63956" standardDeviationMircosecondsPerInvocation="7940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="367" invocations="124" avgMicrosecondsPerInvocation="2960" maxMicrosecondsPerInvocation="40378" standardDeviationMircosecondsPerInvocation="6235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="358" invocations="74" avgMicrosecondsPerInvocation="4838" maxMicrosecondsPerInvocation="26880" standardDeviationMircosecondsPerInvocation="7212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="313" invocations="17" avgMicrosecondsPerInvocation="18435" maxMicrosecondsPerInvocation="310176" standardDeviationMircosecondsPerInvocation="72936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="290" invocations="268" avgMicrosecondsPerInvocation="1085" maxMicrosecondsPerInvocation="16387" standardDeviationMircosecondsPerInvocation="2443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="262" invocations="74" avgMicrosecondsPerInvocation="3550" maxMicrosecondsPerInvocation="70759" standardDeviationMircosecondsPerInvocation="9074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="254" invocations="74" avgMicrosecondsPerInvocation="3445" maxMicrosecondsPerInvocation="41655" standardDeviationMircosecondsPerInvocation="7500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="237" invocations="126" avgMicrosecondsPerInvocation="1882" maxMicrosecondsPerInvocation="33694" standardDeviationMircosecondsPerInvocation="3905"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="199" invocations="126" avgMicrosecondsPerInvocation="1584" maxMicrosecondsPerInvocation="25875" standardDeviationMircosecondsPerInvocation="4357"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="178" invocations="515" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="14679" standardDeviationMircosecondsPerInvocation="1322"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="178" invocations="5" avgMicrosecondsPerInvocation="35624" maxMicrosecondsPerInvocation="177999" standardDeviationMircosecondsPerInvocation="71187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="177" invocations="5" avgMicrosecondsPerInvocation="35496" maxMicrosecondsPerInvocation="173440" standardDeviationMircosecondsPerInvocation="68975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="168" invocations="5" avgMicrosecondsPerInvocation="33675" maxMicrosecondsPerInvocation="157715" standardDeviationMircosecondsPerInvocation="62090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="160" invocations="127" avgMicrosecondsPerInvocation="1266" maxMicrosecondsPerInvocation="94067" standardDeviationMircosecondsPerInvocation="8396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="159" invocations="96" avgMicrosecondsPerInvocation="1661" maxMicrosecondsPerInvocation="53919" standardDeviationMircosecondsPerInvocation="6207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="150" invocations="126" avgMicrosecondsPerInvocation="1193" maxMicrosecondsPerInvocation="17266" standardDeviationMircosecondsPerInvocation="2349"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
