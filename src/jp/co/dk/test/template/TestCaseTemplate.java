@@ -68,6 +68,10 @@ public class TestCaseTemplate {
 		if (TestTemplateProperty.CREATE_TEST_TEMP_DIR.getBoolean()) {
 			TestCaseTemplate.caseTemplate.getTestTmpDir();
 			TestCaseTemplate.caseTemplate.getTestTmpFile();
+			TestCaseTemplate.caseTemplate.getTestTmpDirReadOnly();
+			TestCaseTemplate.caseTemplate.getTestTmpFileReadOnly();
+			TestCaseTemplate.caseTemplate.getTestTmpDirWriteOnly();
+			TestCaseTemplate.caseTemplate.getTestTmpFileWriteOnly();
 		}
 	}
 
@@ -86,6 +90,10 @@ public class TestCaseTemplate {
 		if (TestTemplateProperty.DELETE_TEST_TEMP_FILE.getBoolean()) {
 			TestCaseTemplate.caseTemplate.deleteTestTmpFile();
 			TestCaseTemplate.caseTemplate.deleteTestTmpDir();
+			TestCaseTemplate.caseTemplate.deleteTestTmpFileReadOnly();
+			TestCaseTemplate.caseTemplate.deleteTestTmpDirReadOnly();
+			TestCaseTemplate.caseTemplate.deleteTestTmpFileWriteOnly();
+			TestCaseTemplate.caseTemplate.deleteTestTmpDirWriteOnly();
 		}
 	}
 	
@@ -937,7 +945,11 @@ public class TestCaseTemplate {
 	 * @return テスト用一時作業ディレクトリ
 	 */
 	protected java.io.File getTestTmpDir() {
-		return this.createDir(this.getTestTmpDirInstance());
+		java.io.File dir = this.createDir(this.getTestTmpDirInstance());
+		dir.setReadable(true, true);
+		dir.setWritable(true, true);
+		dir.setExecutable(true, true);
+		return dir;
 	}
 	
 	/**
@@ -946,7 +958,63 @@ public class TestCaseTemplate {
 	 * @return テスト用一時作業ファイル
 	 */
 	protected java.io.File getTestTmpFile() {
-		return this.createFile(this.getTestTmpFileInstance());
+		java.io.File file = this.createFile(this.getTestTmpFileInstance());
+		file.setReadable(true, true);
+		file.setWritable(true, true);
+		file.setExecutable(true, true);
+		return file;
+	}
+	
+	/**
+	 * テスト用一時作業ディレクトリ（読み込み専用）を作成する。
+	 * 
+	 * @return テスト用一時作業ディレクトリ
+	 */
+	protected java.io.File getTestTmpDirReadOnly() {
+		java.io.File dir = this.createDir(this.getTestTmpDirReadOnlyInstance());
+		dir.setReadable(true, true);
+		dir.setWritable(false, false);
+		dir.setExecutable(true, true);
+		return dir;
+	}
+	
+	/**
+	 * テスト用一時作業ファイルを作成する。
+	 * 
+	 * @return テスト用一時作業ファイル
+	 */
+	protected java.io.File getTestTmpFileReadOnly() {
+		java.io.File file = this.createFile(this.getTestTmpFileReadOnlyInstance());
+		file.setReadable(true, true);
+		file.setWritable(false, false);
+		file.setExecutable(true, true);
+		return file;
+	}
+	
+	/**
+	 * テスト用一時作業ディレクトリ（読み込み専用）を作成する。
+	 * 
+	 * @return テスト用一時作業ディレクトリ
+	 */
+	protected java.io.File getTestTmpDirWriteOnly() {
+		java.io.File dir = this.createDir(this.getTestTmpDirWriteOnlyInstance());
+		dir.setReadable(false, false);
+		dir.setWritable(true, true);
+		dir.setExecutable(false, false);
+		return dir;
+	}
+	
+	/**
+	 * テスト用一時作業ファイルを作成する。
+	 * 
+	 * @return テスト用一時作業ファイル
+	 */
+	protected java.io.File getTestTmpFileWriteOnly() {
+		java.io.File file = this.createFile(this.getTestTmpFileWriteOnlyInstance());
+		file.setReadable(false, false);
+		file.setWritable(true, true);
+		file.setExecutable(false, false);
+		return file;
 	}
 	
 	/**
@@ -957,10 +1025,38 @@ public class TestCaseTemplate {
 	}
 	
 	/**
-	 * テスト用一時作業ディレクトリを削除する。
+	 * テスト用一時作業ファイルを削除する。
 	 */
 	protected void deleteTestTmpFile() {
 		this.delete(this.getTestTmpFileInstance());
+	}
+	
+	/**
+	 * テスト用一時作業ディレクトリ（読み取り専用）を削除する。
+	 */
+	protected void deleteTestTmpDirReadOnly() {
+		this.delete(this.getTestTmpDirReadOnlyInstance());
+	}
+	
+	/**
+	 * テスト用一時作業ファイル（読み取り専用）を削除する。
+	 */
+	protected void deleteTestTmpFileReadOnly() {
+		this.delete(this.getTestTmpFileReadOnlyInstance());
+	}
+	
+	/**
+	 * テスト用一時作業ディレクトリ（書き込み専用）を削除する。
+	 */
+	protected void deleteTestTmpDirWriteOnly() {
+		this.delete(this.getTestTmpDirWriteOnlyInstance());
+	}
+	
+	/**
+	 * テスト用一時作業ファイル（書き込み専用）を削除する。
+	 */
+	protected void deleteTestTmpFileWriteOnly() {
+		this.delete(this.getTestTmpFileWriteOnlyInstance());
 	}
 	
 	/**
@@ -1084,8 +1180,10 @@ public class TestCaseTemplate {
 		}
 		if (file.isDirectory()) {
 			File files[] = file.listFiles();
-			for (File deleteFile : files) {
-				this.delete(deleteFile);
+			if (files != null) {
+				for (File deleteFile : files) {
+					this.delete(deleteFile);
+				}
 			}
 			if (!file.delete()) {
 				fail(new StringBuilder("failed to delete directory or file. file=[").append(file.toString()).append(']').toString());
@@ -1109,6 +1207,42 @@ public class TestCaseTemplate {
 	 */
 	private java.io.File getTestTmpFileInstance() {
 		return new File(TestTemplateProperty.TEST_TEMP_FILE.getString());
+	}
+	
+	/**
+	 * テスト用一時作業ディレクトリ（読み取り専用）のオブジェクトを取得する。
+	 * 
+	 * @return ファイルオブジェクト
+	 */
+	private java.io.File getTestTmpDirReadOnlyInstance() {
+		return new File(TestTemplateProperty.TEST_TEMP_DIR_READONLY.getString());
+	}
+	
+	/**
+	 * テスト用一時作業ファイル（読み取り専用）のオブジェクトを取得する。
+	 * 
+	 * @return ファイルオブジェクト
+	 */
+	private java.io.File getTestTmpFileReadOnlyInstance() {
+		return new File(TestTemplateProperty.TEST_TEMP_FILE_READONLY_FILE.getString());
+	}
+	
+	/**
+	 * テスト用一時作業ディレクトリ（書き込み専用）のオブジェクトを取得する。
+	 * 
+	 * @return ファイルオブジェクト
+	 */
+	private java.io.File getTestTmpDirWriteOnlyInstance() {
+		return new File(TestTemplateProperty.TEST_TEMP_DIR_WRITE_ONLY.getString());
+	}
+	
+	/**
+	 * テスト用一時作業ファイル（書き込み専用）のオブジェクトを取得する。
+	 * 
+	 * @return ファイルオブジェクト
+	 */
+	private java.io.File getTestTmpFileWriteOnlyInstance() {
+		return new File(TestTemplateProperty.TEST_TEMP_FILE_WRITE_ONLY.getString());
 	}
 	
 	/**
