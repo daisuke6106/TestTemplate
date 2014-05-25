@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class TestTestTemplate extends TestCaseTemplate {
+public class TestTemplateTest extends TestCaseTemplate {
 	
 	@Test
 	public void getAllPatternList() {
