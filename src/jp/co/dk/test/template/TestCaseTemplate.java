@@ -3,8 +3,11 @@ package jp.co.dk.test.template;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.text.ParseException;
@@ -478,14 +481,6 @@ public class TestCaseTemplate {
 		org.junit.Assert.assertThat(new Character(actual), matcher);
 	}
 	
-	protected <T> Matcher<T> allOf (Matcher<? extends T>... matchers) {
-		return org.hamcrest.core.AllOf.allOf(matchers);
-	}
-	
-	protected <T> Matcher<T> allOf (Iterable<Matcher<? extends T>> matchers) {
-		return org.hamcrest.core.AllOf.allOf(matchers);
-	}
-	
 	protected <T> Matcher<T> is (T matcher) {
 		return org.hamcrest.core.Is.is(matcher);
 	}
@@ -520,14 +515,6 @@ public class TestCaseTemplate {
 	
 	protected Matcher<Character> is (char matcher) {
 		return org.hamcrest.core.Is.is(new Character(matcher));
-	}
-	
-	protected <T> Matcher<T> anything () {
-		return org.hamcrest.core.IsAnything.anything();
-	}
-	
-	protected <T> Matcher<T> anything (String matcher) {
-		return org.hamcrest.core.IsAnything.anything(matcher);
 	}
 	
 	protected <T> Matcher<T> equalTo (T operand) {
@@ -570,11 +557,11 @@ public class TestCaseTemplate {
 		return org.hamcrest.core.IsNot.not(new Character(matcher));
 	}
 	
-	protected <T> Matcher<T> nullValue () {
+	protected Matcher nullValue () {
 		return org.hamcrest.core.IsNull.nullValue();
 	}
 	
-	protected <T> Matcher<T> notNullValue () {
+	protected Matcher notNullValue () {
 		return org.hamcrest.core.IsNull.notNullValue();
 	}
 	
@@ -1403,5 +1390,29 @@ public class TestCaseTemplate {
 			if (rule.match(element)) return element;
 		}
 		return null;
+	}
+	
+	// シリアライズ関連 ====================================================================================================
+	
+	public void testSerialize(java.io.Serializable target) {
+		try {
+			File testTmpDir = getTestTmpDirInstance();
+			StringBuilder testTmpFile = new StringBuilder();
+			long fileName = new Date().getTime(); 
+			testTmpFile.append(testTmpDir.getAbsolutePath()).append('/').append("testserialize_").append(fileName);
+			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File(testTmpFile.toString())));
+			oos.writeObject(target);
+			oos.close();
+			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(new File(testTmpFile.toString())));
+			Object object = ois.readObject();
+			ois.close();
+			assertThat(target.equals(object), is(true));
+		} catch (FileNotFoundException e) {
+			fail(e);
+		} catch (IOException e) {
+			fail(e);
+		} catch (ClassNotFoundException e) {
+			fail(e);
+		}
 	}
 }

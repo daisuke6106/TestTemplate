@@ -316,4 +316,11 @@ public class TestTemplateTest extends TestCaseTemplate {
 			assertEquals(super.getRandomElement(list5, rule),"a");
 		}
 	}
+	
+	@Test
+	public void testSerialize() {
+		// シリアライズ可能なオブジェクトを渡した場合、正常にシリアライズ可能、デシリアライズ可能で有ること
+		// また、デシリアライズした場合、全く同じオブジェクトであること
+		super.testSerialize("test");
+	}
 }
