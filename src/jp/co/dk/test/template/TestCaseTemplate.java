@@ -22,12 +22,15 @@ import jp.co.dk.message.exception.AbstractMessageException;
 import jp.co.dk.test.template.property.TestTemplateProperty;
 
 import org.hamcrest.Matcher;
+import org.hamcrest.core.AnyOf;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.TestName;
+
+import static org.hamcrest.core.AnyOf.anyOf;
 
 /**
  * TestCaseTemplateは、JUnitを使用して試験を行う際に使用するテストケースクラスの基底クラスです。<br/>
@@ -571,6 +574,10 @@ public class TestCaseTemplate {
 	
 	protected <T> Matcher<T> notNullValue (@SuppressWarnings("unused") Class<T> type) {
 		return org.hamcrest.core.IsNull.notNullValue(type);
+	}
+	
+	public static <T> AnyOf<T> anyOf(Matcher<? super T>... matchers) {
+		return org.hamcrest.core.AnyOf.anyOf(matchers);
 	}
 	
 	// ===================================================================================================================
