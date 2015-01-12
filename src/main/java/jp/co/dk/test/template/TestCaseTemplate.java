@@ -576,10 +576,6 @@ public class TestCaseTemplate {
 		return org.hamcrest.core.IsNull.notNullValue(type);
 	}
 	
-	public static <T> AnyOf<T> anyOf(Matcher<? super T>... matchers) {
-		return org.hamcrest.core.AnyOf.anyOf(matchers);
-	}
-	
 	// ===================================================================================================================
 	
 	// その他比較関連 =====================================================================================================

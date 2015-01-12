@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="2.0.2" sequence="0" timestamp="1406559642125" analysisTimestamp="1406559642178" release="">
+<BugCollection version="2.0.2" sequence="0" timestamp="1421083269825" analysisTimestamp="1421083269839" release="">
   <Project projectName="">
-    <Jar>/home/dk/workspace_svn/TestTemplate/testtemplate.jar</Jar>
-    <AuxClasspathEntry>/home/dk/workspace_svn/TestTemplate/lib/junit-4.10.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/workspace_svn/TestTemplate/lib/message_all.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/dk/workspace_svn/TestTemplate/lib/property_all.jar</AuxClasspathEntry>
-    <SrcDir>/home/dk/workspace_svn/TestTemplate/src</SrcDir>
+    <Jar>/home/dk/github_workspace/TestTemplate/testtemplate.jar</Jar>
+    <AuxClasspathEntry>/home/dk/github_workspace/TestTemplate/lib/junit-4.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/TestTemplate/lib/message_all.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/dk/github_workspace/TestTemplate/lib/property_all.jar</AuxClasspathEntry>
+    <SrcDir>/home/dk/github_workspace/TestTemplate/src/main/java</SrcDir>
   </Project>
   <Errors errors="4" missingClasses="0">
     <Error>
       <ErrorMessage>Unable to get XClass for java/lang/StringBuilder</ErrorMessage>
-      <Exception>java.lang.ArrayIndexOutOfBoundsException: 26721</Exception>
+      <Exception>java.lang.ArrayIndexOutOfBoundsException: 5747</Exception>
       <StackTrace>org.objectweb.asm.ClassReader.readClass(Unknown Source)</StackTrace>
       <StackTrace>org.objectweb.asm.ClassReader.accept(Unknown Source)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.asm.FBClassReader.accept(FBClassReader.java:44)</StackTrace>
@@ -34,7 +34,9 @@
     </Error>
     <Error>
       <ErrorMessage>Unable to get XClass for java/lang/reflect/Method</ErrorMessage>
-      <Exception>java.lang.ArrayIndexOutOfBoundsException: 2560</Exception>
+      <Exception>java.lang.ArrayIndexOutOfBoundsException: 207</Exception>
+      <StackTrace>org.objectweb.asm.ClassReader.a(Unknown Source)</StackTrace>
+      <StackTrace>org.objectweb.asm.ClassReader.readUTF8(Unknown Source)</StackTrace>
       <StackTrace>org.objectweb.asm.ClassReader.readClass(Unknown Source)</StackTrace>
       <StackTrace>org.objectweb.asm.ClassReader.accept(Unknown Source)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.asm.FBClassReader.accept(FBClassReader.java:44)</StackTrace>
@@ -57,7 +59,7 @@
     </Error>
     <Error>
       <ErrorMessage>Unable to get XClass for java/lang/String</ErrorMessage>
-      <Exception>java.lang.ArrayIndexOutOfBoundsException: 26721</Exception>
+      <Exception>java.lang.ArrayIndexOutOfBoundsException: 5747</Exception>
       <StackTrace>org.objectweb.asm.ClassReader.readClass(Unknown Source)</StackTrace>
       <StackTrace>org.objectweb.asm.ClassReader.accept(Unknown Source)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.asm.FBClassReader.accept(FBClassReader.java:44)</StackTrace>
@@ -80,7 +82,9 @@
     </Error>
     <Error>
       <ErrorMessage>Unable to get XClass for java/lang/Class</ErrorMessage>
-      <Exception>java.lang.ArrayIndexOutOfBoundsException: 2560</Exception>
+      <Exception>java.lang.ArrayIndexOutOfBoundsException: 207</Exception>
+      <StackTrace>org.objectweb.asm.ClassReader.a(Unknown Source)</StackTrace>
+      <StackTrace>org.objectweb.asm.ClassReader.readUTF8(Unknown Source)</StackTrace>
       <StackTrace>org.objectweb.asm.ClassReader.readClass(Unknown Source)</StackTrace>
       <StackTrace>org.objectweb.asm.ClassReader.accept(Unknown Source)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.asm.FBClassReader.accept(FBClassReader.java:44)</StackTrace>
@@ -102,10 +106,10 @@
       <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1298)</StackTrace>
     </Error>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 29 Jul 2014 00:00:42 +0900" total_classes="0" referenced_classes="76" total_bugs="0" total_size="0" num_packages="0" vm_version="25.5-b02" cpu_seconds="1.47" clock_seconds="1.93" peak_mbytes="79.14" alloc_mbytes="780.50" gc_seconds="0.06">
+  <FindBugsSummary timestamp="Tue, 13 Jan 2015 02:21:09 +0900" total_classes="0" referenced_classes="76" total_bugs="0" total_size="0" num_packages="0" vm_version="25.20-b23" cpu_seconds="1.38" clock_seconds="0.50" peak_mbytes="93.50" alloc_mbytes="1749.50" gc_seconds="0.02">
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="675" invocations="148" avgMicrosecondsPerInvocation="4565" maxMicrosecondsPerInvocation="88646" standardDeviationMircosecondsPerInvocation="11146"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="234" invocations="21" avgMicrosecondsPerInvocation="11160" maxMicrosecondsPerInvocation="226378" standardDeviationMircosecondsPerInvocation="48145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="179" invocations="148" avgMicrosecondsPerInvocation="1214" maxMicrosecondsPerInvocation="18753" standardDeviationMircosecondsPerInvocation="2939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="35" invocations="145" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="8125" standardDeviationMircosecondsPerInvocation="851"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
