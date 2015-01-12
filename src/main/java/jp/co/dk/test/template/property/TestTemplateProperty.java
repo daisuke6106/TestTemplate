@@ -49,7 +49,7 @@ public class TestTemplateProperty extends AbstractProperty{
 	
 	
 	protected TestTemplateProperty(String key) throws PropertyException {
-		super(new File("properties/test/TestTemplate.properties"), key);
+		super(new File("TestTemplate.properties"), key);
 	}
 	
 }
