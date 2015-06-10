@@ -106,9 +106,9 @@ public class MemoryCounter {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		// sb.append("UseMegaByte [").append(this.getUsedMegaByte()).append(']').append(" Mbyte").append(System.lineSeparator());
-		sb.append("UseKiroByte [").append(this.getUsedKiroByte()).append(']').append(" Kbyte").append(System.lineSeparator());
-		// sb.append("UseByte     [").append(this.getUsedByte()).append(']').append(" byte").append(System.lineSeparator());
+		// sb.append("UseMegaByte [").append(this.getUsedMegaByte()).append(']').append(" Mbyte");
+		sb.append("UseKiroByte [").append(this.getUsedKiroByte()).append(']').append(" Kbyte");
+		// sb.append("UseByte     [").append(this.getUsedByte()).append(']').append(" byte");
 		return sb.toString();
 	}
 }

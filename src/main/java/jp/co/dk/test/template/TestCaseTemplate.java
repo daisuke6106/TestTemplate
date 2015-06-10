@@ -17,6 +17,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import jp.co.dk.logger.Logger;
+import jp.co.dk.logger.LoggerFactory;
 import jp.co.dk.message.AbstractMessage;
 import jp.co.dk.message.exception.AbstractMessageException;
 import jp.co.dk.test.template.property.TestTemplateProperty;
@@ -56,6 +58,9 @@ public class TestCaseTemplate {
 	
 	private static TestCaseTemplate caseTemplate = new TestCaseTemplate();
 	
+	/** ロガーインスタンス */
+	private Logger logger = LoggerFactory.getLogger(TestCaseTemplate.class);
+	
 	// テスト用処理 ====================================================================================================
 	
 	/**
@@ -69,8 +74,12 @@ public class TestCaseTemplate {
 	 */
 	@BeforeClass 
 	public static void beforeClass() {
-		TestCaseTemplate.caseTemplate.print(TestTemplateProperty.CONSOLE_HEADER.getString());
-		TestCaseTemplate.caseTemplate.print(TestCaseTemplate.caseTemplate.getClassName());
+		StringBuilder line = new StringBuilder();
+		line.append("[start] class=[").append(TestCaseTemplate.caseTemplate.getClassName()).append(']');
+		line.append("#################################################");
+		line.append("#################################################");
+		line.append("#################################################");
+		LoggerFactory.getLogger(TestCaseTemplate.class).info(line.substring(0, 150));
 		if (TestTemplateProperty.CREATE_TEST_TEMP_DIR.getBoolean()) {
 			TestCaseTemplate.caseTemplate.getTestTmpDir();
 			TestCaseTemplate.caseTemplate.getTestTmpFile();
@@ -92,7 +101,6 @@ public class TestCaseTemplate {
 	 */
 	@AfterClass 
 	public static void afterClass() {
-		TestCaseTemplate.caseTemplate.print(TestTemplateProperty.CONSOLE_FOTTER.getString());
 		if (TestTemplateProperty.DELETE_TEST_TEMP_FILE.getBoolean()) {
 			TestCaseTemplate.caseTemplate.deleteTestTmpFile();
 			TestCaseTemplate.caseTemplate.deleteTestTmpDir();
@@ -101,6 +109,12 @@ public class TestCaseTemplate {
 			TestCaseTemplate.caseTemplate.deleteTestTmpFileWriteOnly();
 			TestCaseTemplate.caseTemplate.deleteTestTmpDirWriteOnly();
 		}
+		StringBuilder line = new StringBuilder();
+		line.append("[fin]");
+		line.append("#################################################");
+		line.append("#################################################");
+		line.append("#################################################");
+		LoggerFactory.getLogger(TestCaseTemplate.class).info(line.substring(0, 150));
 	}
 	
 	/**
@@ -114,7 +128,12 @@ public class TestCaseTemplate {
 	 */
 	@Before
 	public void before() {
-		System.out.println("==============================[Method Name]" + testName.getMethodName()+"==============================");
+		StringBuilder line = new StringBuilder();
+		line.append("[start] method:[").append(testName.getMethodName()).append(']');
+		line.append("=================================================");
+		line.append("=================================================");
+		line.append("=================================================");
+		logger.info(line.substring(0, 150));
 		this.timeCounter = new TimeCounter();
 		this.memoryCounter = new MemoryCounter();
 		this.timeCounter.start();
@@ -134,8 +153,14 @@ public class TestCaseTemplate {
 	public void after() {
 		this.timeCounter.fin();
 		this.memoryCounter.fin();
-		this.print(this.timeCounter.toString());
-		this.print(this.memoryCounter.toString());
+		this.logger.info(this.timeCounter.toString());
+		this.logger.info(this.memoryCounter.toString());
+		StringBuilder line = new StringBuilder();
+		line.append("[fin]");
+		line.append("=================================================");
+		line.append("=================================================");
+		line.append("=================================================");
+		logger.info(line.substring(0, 150));
 	}
 	
 	// 比較関連     ====================================================================================================
@@ -837,10 +862,6 @@ public class TestCaseTemplate {
 			if (!list1.get(i).equals(list2.get(i))) return false; 
 		}
 		return true;
-	}
-	
-	private void print(String str) {
-		
 	}
 	
 	private String getClassName() {

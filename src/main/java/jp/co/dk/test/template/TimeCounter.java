@@ -79,9 +79,9 @@ public class TimeCounter {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		//sb.append("Second      [").append(this.getSecond()).append(']').append(System.lineSeparator());
-		sb.append("Millisecond [").append(this.getMillisecond()).append(']').append(System.lineSeparator());
-		//sb.append("Nanosecond  [").append(this.getNanosecond()).append(']').append(System.lineSeparator());
+		//sb.append("Second      [").append(this.getSecond()).append(']');
+		sb.append("Millisecond [").append(this.getMillisecond()).append(']');
+		//sb.append("Nanosecond  [").append(this.getNanosecond()).append(']');
 		return sb.toString();
 	}
 }
