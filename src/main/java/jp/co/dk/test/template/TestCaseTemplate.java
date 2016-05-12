@@ -32,6 +32,8 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.TestName;
 
+import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
+
 import static org.hamcrest.core.AnyOf.anyOf;
 
 /**
@@ -1118,6 +1120,26 @@ public class TestCaseTemplate {
 		return ClassLoader.getSystemResourceAsStream(name);
 	}
 	
+	/**
+	 * パッケージ階層が始まる基点からリソースを探し、指定のファイルの内容を文字列として返却します。
+	 * 
+	 * 例：jp/co/test/TestFile.txt読み込む場合<br/>
+	 * 引き数に"jp/co/test/TestFile.txt"を設定することで読み込めます。
+	 * 
+	 * @param name ファイル名
+	 * @param encode エンコード
+	 * @return 入力ストリーム
+	 */
+	protected String getInputStreamBySystemResource(String name, String encode) throws IOException {
+		InputStream stream = this.getInputStreamBySystemResource(name);
+		ByteOutputStream bos = new ByteOutputStream();
+		byte[] buffer = new byte[1024];
+		for(int len=1; len>0; len=stream.read(buffer)) {
+			bos.write(buffer);
+		}
+		bos.close();
+		return new String(bos.getBytes(), encode);
+	}
 	
 	/**
 	 * テスト用一時作業ディレクトリに指定のファイル名でファイルオブジェクトのインスタンスを生成、返却します。<p/>
@@ -1286,7 +1308,7 @@ public class TestCaseTemplate {
 	 * @return ファイルオブジェクト
 	 */
 	protected java.io.File setUpdateTimeToFile(java.io.File file, Date date) {
-		if (!file.setLastModified(date.getTime())) {;
+		if (!file.setLastModified(date.getTime())) {
 			fail(new StringBuilder("failed to update lastmodified. file=[").append(file.toString()).append(']').toString());
 		}
 		return file;
