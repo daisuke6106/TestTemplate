@@ -1,5 +1,7 @@
 package jp.co.dk.test.template;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,8 +33,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.TestName;
-
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 
 import static org.hamcrest.core.AnyOf.anyOf;
 
@@ -462,8 +462,17 @@ public class TestCaseTemplate {
 		int byte1;
 		int byte2;
 		try {
+			long byteindex = 0;
 			while (((byte1 = stream1.read()) != -1) && ((byte2 = stream2.read()) != -1)) {
-				if (byte1 != byte2) org.junit.Assert.fail();
+				++byteindex;
+				if (byte1 != byte2) {
+					StringBuilder intomessage = new StringBuilder();
+					intomessage.append("point:[").append(byteindex).append("]");
+					intomessage.append(" stream1:[").append(byte1).append("(").append((char)byte1).append(")").append("]");
+					intomessage.append(" stream2:[").append(byte2).append("(").append((char)byte2).append(")").append("]");
+					logger.info(intomessage.toString());
+					org.junit.Assert.fail();
+				}
 			}
 		} catch (FileNotFoundException e) {
 			fail(e);
@@ -1115,9 +1124,17 @@ public class TestCaseTemplate {
 	 * 
 	 * @param name ファイル名
 	 * @return 入力ストリーム
+	 * @throws IOException 
 	 */
-	protected InputStream getInputStreamBySystemResource(String name) {
-		return ClassLoader.getSystemResourceAsStream(name);
+	protected InputStream getInputStreamBySystemResource(String name) throws IOException {
+		InputStream stream = ClassLoader.getSystemResourceAsStream(name);
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();
+		byte[] buffer = new byte[1024];
+		for(int len=1; len>0; len=stream.read(buffer)) {
+			bos.write(buffer);
+		}
+		bos.close();
+		return new ByteArrayInputStream(bos.toByteArray());
 	}
 	
 	/**
@@ -1131,14 +1148,14 @@ public class TestCaseTemplate {
 	 * @return 入力ストリーム
 	 */
 	protected String getInputStreamBySystemResource(String name, String encode) throws IOException {
-		InputStream stream = this.getInputStreamBySystemResource(name);
-		ByteOutputStream bos = new ByteOutputStream();
+		InputStream stream = ClassLoader.getSystemResourceAsStream(name);
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		byte[] buffer = new byte[1024];
 		for(int len=1; len>0; len=stream.read(buffer)) {
 			bos.write(buffer);
 		}
 		bos.close();
-		return new String(bos.getBytes(), encode);
+		return new String(bos.toByteArray(), encode);
 	}
 	
 	/**
